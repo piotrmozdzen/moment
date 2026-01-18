@@ -36,7 +36,7 @@ export function Navbar() {
 
                 {/* Center: Logo */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none md:pointer-events-auto">
-                    <Link href="/" className="flex flex-col items-center">
+                    <Link href="/" className="flex flex-col items-center font-montserrat">
                         <span className="text-3xl font-bold tracking-[0.2em] text-slate-900 leading-none">MOMENT</span>
                         <span className="text-[0.7rem] font-bold tracking-[0.3em] text-slate-600 uppercase mt-1">Drink Bar</span>
                     </Link>

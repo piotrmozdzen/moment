@@ -27,15 +27,15 @@ export function InquiryForm() {
                     {/* Left Side: Content */}
                     <div className="space-y-8">
                         <div className="space-y-2">
-                            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 uppercase tracking-tight font-[family-name:var(--font-outfit)] leading-[1.1]">
+                            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 uppercase tracking-tight font-montserrat leading-[1.1]">
                                 Skontaktuj się <br /> z nami
                             </h2>
-                            <p className="font-[family-name:var(--font-caveat)] text-2xl md:text-3xl text-slate-800">
+                            <p className="font-caveat text-2xl md:text-3xl text-slate-800">
                                 porozmawiajmy
                             </p>
                         </div>
 
-                        <div className="space-y-6 text-slate-800/80 font-medium max-w-sm leading-relaxed text-base md:text-lg">
+                        <div className="space-y-6 text-slate-800/80 font-medium max-w-sm leading-relaxed text-base md:text-lg font-sans">
                             <p>
                                 Chcesz uzyskać więcej szczegółowych informacji na temat współpracy?
                             </p>
@@ -55,8 +55,8 @@ export function InquiryForm() {
                                 </label>
                                 <input
                                     type="email"
-                                    className="w-full bg-transparent border-none p-0 focus:ring-0 text-slate-900 font-bold placeholder:text-slate-900/20"
-                                    placeholder="twoj@email.pl"
+                                    className="w-full bg-white border-none p-2 focus:ring-0 text-slate-900 font-bold placeholder:text-slate-900/40"
+                                    placeholder="Email"
                                 />
                             </div>
 
@@ -68,7 +68,8 @@ export function InquiryForm() {
                                     </label>
                                     <input
                                         type="text"
-                                        className="w-full bg-transparent border-none p-0 focus:ring-0 text-slate-900 font-bold"
+                                        className="w-full bg-white border-none p-2 focus:ring-0 text-slate-900 font-bold placeholder:text-slate-900/40"
+                                        placeholder="Imię"
                                     />
                                 </div>
                                 <div className="border-b border-slate-900/40 pb-2">
@@ -77,7 +78,8 @@ export function InquiryForm() {
                                     </label>
                                     <input
                                         type="text"
-                                        className="w-full bg-transparent border-none p-0 focus:ring-0 text-slate-900 font-bold"
+                                        className="w-full bg-white border-none p-2 focus:ring-0 text-slate-900 font-bold placeholder:text-slate-900/40"
+                                        placeholder="Nazwisko"
                                     />
                                 </div>
                             </div>
@@ -90,7 +92,8 @@ export function InquiryForm() {
                                     </label>
                                     <input
                                         type="text"
-                                        className="w-full bg-transparent border-none p-0 focus:ring-0 text-slate-900 font-bold"
+                                        className="w-full bg-white border-none p-2 focus:ring-0 text-slate-900 font-bold placeholder:text-slate-900/40"
+                                        placeholder="Miasto"
                                     />
                                 </div>
                                 <div className="border-b border-slate-900/40 pb-2">
@@ -99,11 +102,23 @@ export function InquiryForm() {
                                     </label>
                                     <input
                                         type="tel"
-                                        className="w-full bg-transparent border-none p-0 focus:ring-0 text-slate-900 font-bold"
+                                        className="w-full bg-white border-none p-2 focus:ring-0 text-slate-900 font-bold placeholder:text-slate-900/40"
+                                        placeholder="Telefon"
                                     />
                                 </div>
                             </div>
 
+                            {/* Message Field */}
+                            <div className="border-b border-slate-900/40 pb-2">
+                                <label className="block text-[10px] font-bold uppercase tracking-wider text-slate-900/60 mb-1">
+                                    Wiadomość
+                                </label>
+                                <textarea
+                                    rows={4}
+                                    className="w-full bg-white border-none p-2 focus:ring-0 text-slate-900 font-bold placeholder:text-slate-900/40 resize-none"
+                                    placeholder="Wiadomość"
+                                />
+                            </div>
 
                             {/* Interests (Checkboxes) */}
                             <div className="space-y-3 pt-4">
@@ -122,11 +137,13 @@ export function InquiryForm() {
                                 </div>
                             </div>
 
+
+
                             {/* Submit Button */}
                             <div className="pt-8">
                                 <button
                                     type="submit"
-                                    className="bg-slate-900 text-white font-bold uppercase tracking-widest text-xs py-4 px-10 rounded-full hover:bg-slate-800 transition-all hover:scale-105 active:scale-95"
+                                    className="bg-slate-900 text-white font-bold uppercase tracking-widest text-xs py-4 px-10 rounded-full hover:bg-slate-800 transition-all hover:scale-105 active:scale-95 font-montserrat"
                                 >
                                     Wyślij
                                 </button>

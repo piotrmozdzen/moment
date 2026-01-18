@@ -63,7 +63,7 @@ function Polaroid({
             {/* Caption Area */}
             {caption && (
                 <div className="pt-2 flex items-center justify-center">
-                    <p className="font-[family-name:var(--font-caveat)] text-slate-800 text-lg md:text-xl text-center leading-none transform -rotate-1">
+                    <p className="font-caveat text-slate-800 text-lg md:text-xl text-center leading-none transform -rotate-1">
                         {caption}
                     </p>
                 </div>
@@ -86,47 +86,49 @@ export function Hero() {
             src: "/images/hero-wesela.png",
             alt: "Wesela",
             caption: "Wesela",
-            rotation: "rotate-[-5deg]",
-            className: "top-[5%] left-1/2 -translate-x-[110%] w-32 md:w-44 lg:w-52",
-            zIndex: "z-40",
-            hasTapeTop: true
+            rotation: "rotate-[8deg]",
+            className: "top-[8%] right-[12%] w-36 md:w-44 lg:w-[200px]",
+            zIndex: "z-20",
+            hasTapeBottom: true
         },
         {
             src: "/images/hero-barman.jpg",
             alt: "Nasi barmani",
-            caption: "Z pasją",
-            rotation: "rotate-[6deg]",
-            className: "top-[25%] left-1/2 -translate-x-[5%] w-32 md:w-44 lg:w-52",
-            zIndex: "z-30"
+            caption: "Imprezy okolicznościowe",
+            rotation: "rotate-[-3deg]",
+            className: "top-[5%] left-[8%] w-48 md:w-60 lg:w-[300px]",
+            zIndex: "z-10",
+            hasTapeTop: true
+        },
+        {
+            src: "/images/hero-moment-new.jpg",
+            alt: "Imprezy okolicznościowe",
+            caption: "Urodziny",
+            rotation: "rotate-[5deg]",
+            className: "top-[50%] right-[8%] w-44 md:w-56 lg:w-[260px]",
+            zIndex: "z-30",
+            hasTapeTop: true
         },
         {
             src: "/images/hero-okolicznosciowe.jpg",
-            alt: "Imprezy okolicznościowe",
-            caption: "Urodziny",
-            rotation: "rotate-[-8deg]",
-            className: "top-[45%] left-1/2 -translate-x-[100%] w-32 md:w-44 lg:w-52",
-            zIndex: "z-20"
-        },
-        {
-            src: "/images/hero-moment.png",
             alt: "Moment Drink Bar",
             caption: "Moment",
-            rotation: "rotate-[9deg]",
-            className: "top-[65%] left-1/2 -translate-x-[15%] w-32 md:w-44 lg:w-52",
-            zIndex: "z-10",
+            rotation: "rotate-[-8deg]",
+            className: "top-[54%] left-[10%] w-44 md:w-56 lg:w-[260px]",
+            zIndex: "z-40",
             hasTapeBottom: true
         }
     ];
 
     return (
-        <section className="min-h-screen w-full bg-[radial-gradient(circle_at_center,_#F2E6D9_0%,_#B8CEF2_100%)] flex flex-col lg:flex-row items-center overflow-hidden pt-24 lg:pt-0">
+        <section className="min-h-screen w-full bg-[radial-gradient(circle_at_center,_#F2E6D9_0%,_#B8CEF2_100%)] flex flex-col lg:flex-row items-center pt-24 lg:pt-0">
             {/* Left Side: Content */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-32 z-10 relative">
                 <div className="space-y-0 mb-20 animate-fade-in relative">
-                    <h1 className="text-6xl md:text-[90px] font-bold uppercase tracking-tighter font-[family-name:var(--font-montserrat)] text-slate-900 leading-[0.8]">
+                    <h1 className="text-6xl md:text-[90px] font-bold uppercase tracking-tighter font-montserrat text-slate-900 leading-[0.8]">
                         Moment
                     </h1>
-                    <h1 className="text-4xl md:text-[60px] font-bold uppercase tracking-widest font-[family-name:var(--font-montserrat)] text-slate-900 leading-[0.8] pl-2 opacity-80">
+                    <h1 className="text-4xl md:text-[60px] font-bold uppercase tracking-widest font-montserrat text-slate-900 leading-[0.8] pl-2 opacity-80">
                         drink bar
                     </h1>
                 </div>
@@ -146,7 +148,7 @@ export function Hero() {
                             </svg>
                         </div>
 
-                        <h2 className="text-3xl md:text-5xl font-[family-name:var(--font-caveat)] font-bold text-slate-800 leading-tight italic relative z-10 px-4">
+                        <h2 className="text-3xl md:text-5xl font-caveat font-bold text-slate-800 leading-tight italic relative z-10 px-4">
                             Zatrzymaj moment w każdym kieliszku.
                         </h2>
 
@@ -185,7 +187,7 @@ export function Hero() {
                                     <circle cx="12" cy="9" r="1" fill="currentColor" />
                                 </svg>
                             </div>
-                            <span className="font-[family-name:var(--font-caveat)] text-slate-700 font-bold text-2xl group-hover:text-slate-900 transition-colors">Wesela</span>
+                            <span className="font-caveat text-slate-700 font-bold text-2xl group-hover:text-slate-900 transition-colors">Wesela</span>
                         </div>
                         <div className="flex items-center gap-4 group cursor-pointer">
                             <div className="w-8 h-8 opacity-70 group-hover:opacity-100 transition-opacity">
@@ -194,15 +196,15 @@ export function Hero() {
                                     <path d="M11 2H13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                                 </svg>
                             </div>
-                            <span className="font-[family-name:var(--font-caveat)] text-slate-700 font-bold text-2xl whitespace-nowrap group-hover:text-slate-900 transition-colors">Imprezy okolicznościowe</span>
+                            <span className="font-caveat text-slate-700 font-bold text-2xl whitespace-nowrap group-hover:text-slate-900 transition-colors">Imprezy okolicznościowe</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Right Side: Cascading Polaroids */}
-            <div className="w-full lg:w-1/2 h-[750px] lg:h-screen relative flex items-center justify-center mt-12 lg:mt-0 pb-12">
-                <div className="relative w-full h-full max-w-[500px] lg:max-w-none">
+            <div className="w-full lg:w-1/2 h-[850px] lg:h-screen relative flex items-center justify-center lg:mt-0">
+                <div className="relative w-full h-full max-w-[700px] mx-auto overflow-hidden py-16 px-8">
                     {photos.map((photo, index) => (
                         <Polaroid
                             key={index}

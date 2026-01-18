@@ -7,7 +7,7 @@ export function About() {
         <section>
             {/* Main Title Section */}
             <div className="bg-brand-cream py-16 text-center">
-                <h2 className="text-[1.5rem] font-semibold leading-[1.3] tracking-tight text-slate-900 font-[family-name:var(--font-montserrat)] uppercase">
+                <h2 className="text-[1.5rem] font-semibold leading-[1.3] tracking-tight text-slate-900 font-montserrat uppercase">
                     Dlaczego powinieneś skorzystać z naszych usług?
                 </h2>
             </div>
@@ -16,10 +16,10 @@ export function About() {
             <div className="flex flex-col md:flex-row h-auto md:h-[700px] w-full overflow-hidden border-t border-slate-900/10">
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-r md:border-r-0">
                     <div className="max-w-xl mx-auto w-full relative z-10">
-                        <h3 className="text-2xl font-bold mb-8 font-[family-name:var(--font-montserrat)] uppercase tracking-wide">
+                        <h3 className="text-2xl font-bold mb-8 font-montserrat uppercase tracking-wide">
                             WYSOKIEJ JAKOŚCI SKŁADNIKI
                         </h3>
-                        <p className="text-slate-700 font-normal text-[18px] leading-relaxed">
+                        <p className="text-slate-700 font-normal text-[18px] leading-relaxed font-sans">
                             Wierzymy, że sekret doskonałego koktajlu tkwi w detalach. Pracujemy wyłącznie na alkoholach marek premium oraz świeżych owocach, które kupujemy od sprawdzonych dostawców.
                         </p>
                     </div>
@@ -64,10 +64,10 @@ export function About() {
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-l md:border-l-0">
                     <div className="max-w-xl mx-auto w-full relative z-10">
-                        <h3 className="text-2xl font-bold mb-8 font-[family-name:var(--font-montserrat)] uppercase tracking-wide">
+                        <h3 className="text-2xl font-bold mb-8 font-montserrat uppercase tracking-wide">
                             SMAK NIKOGO NIE WYKLUCZA
                         </h3>
-                        <p className="text-slate-700 font-normal text-[18px] leading-relaxed">
+                        <p className="text-slate-700 font-normal text-[18px] leading-relaxed font-sans">
                             Szanujemy wybory Twoich gości. Niezależnie od tego, czy ktoś jest kierowcą, czy po prostu nie pije alkoholu, zasługuje na coś więcej niż wodę z cytryną.
                             <br /><br />
                             Nasza oferta obejmuje sekcję mocktaili (drinków virgin). Gwarantujemy, że bezalkoholowe Mojito czy Pornstar Martini smakują u nas równie obłędnie, co oryginały.
@@ -100,10 +100,10 @@ export function About() {
             <div className="flex flex-col md:flex-row h-auto md:h-[700px] w-full overflow-hidden border-t border-b border-slate-900/10">
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-r md:border-r-0">
                     <div className="max-w-xl mx-auto w-full relative z-10">
-                        <h3 className="text-2xl font-bold mb-8 font-[family-name:var(--font-montserrat)] uppercase tracking-wide">
+                        <h3 className="text-2xl font-bold mb-8 font-montserrat uppercase tracking-wide">
                             Bar to przede wszystkim ludzie
                         </h3>
-                        <p className="text-slate-700 font-normal text-[18px] leading-relaxed">
+                        <p className="text-slate-700 font-normal text-[18px] leading-relaxed font-sans">
                             Nawet najlepszy alkohol potrzebuje odpowiedniej oprawy.
                             Nasz zespół to zgrana ekipa barmanów, którzy tworzą niepowtarzalną atmosferę przy barze.
                             <br />

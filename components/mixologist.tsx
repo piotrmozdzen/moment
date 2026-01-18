@@ -19,10 +19,10 @@ export function Mixologist() {
 
                 {/* Right Side: Content */}
                 <div className="w-full md:w-1/2">
-                    <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-slate-800 mb-4 font-[family-name:var(--font-montserrat)]">
+                    <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-slate-800 mb-4 font-montserrat">
                         Zasady dobrego koktajlu
                     </h2>
-                    <h3 className="text-4xl text-slate-900 font-[family-name:var(--font-caveat)] mb-8">
+                    <h3 className="text-4xl text-slate-900 font-caveat mb-8">
                         Poznaj Filipa
                     </h3>
 

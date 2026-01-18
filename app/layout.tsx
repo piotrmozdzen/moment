@@ -1,15 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter, Montserrat, Caveat } from 'next/font/google'
+import { Montserrat, Caveat } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { siteConfig } from '@/lib/site-config'
 import { cn } from '@/lib/utils'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
-  weight: ["400", "700", "900"],
+  weight: ["400", "500", "600", "700", "900"],
 })
 const caveat = Caveat({
   subsets: ['latin'],
@@ -57,7 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={cn("min-h-screen bg-background font-sans antialiased", inter.variable, montserrat.variable, caveat.variable)}>
+      <body className={cn("min-h-screen bg-background font-sans antialiased", montserrat.variable, caveat.variable)}>
         <div className="flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">
