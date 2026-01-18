@@ -1,12 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/navbar'
-import { Footer } from '@/components/footer'
 import { siteConfig } from '@/lib/site-config'
 import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat'
+})
 
 export const metadata: Metadata = {
   title: {
@@ -49,13 +52,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={cn("min-h-screen bg-background font-sans antialiased", inter.variable)}>
+      <body className={cn("min-h-screen bg-background font-sans antialiased", inter.variable, montserrat.variable)}>
         <div className="flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">
             {children}
           </main>
-          <Footer />
         </div>
       </body>
     </html>

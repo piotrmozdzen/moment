@@ -1,5 +1,5 @@
 export const siteConfig = {
-    name: "Acme Corp",
+    name: "MOMENT DRINK BAR",
     description: "Building the future with modern solutions. We provide top-tier services for businesses looking to scale.",
     url: "https://acme-example.com",
     ogImage: "https://acme-example.com/og.jpg",
@@ -7,12 +7,14 @@ export const siteConfig = {
         twitter: "https://twitter.com/acme",
         github: "https://github.com/acme",
         linkedin: "https://linkedin.com/company/acme",
+        instagram: "https://instagram.com",
+        facebook: "https://facebook.com",
     },
     navItems: [
-        { label: "Home", href: "/" },
-        { label: "Services", href: "/services" },
-        { label: "About", href: "/about" },
-        { label: "Contact", href: "/contact" },
+        { label: "O NAS", href: "/o-nas" },
+        { label: "OFERTA", href: "/oferta" },
+        { label: "BAZA KOKTAJLI", href: "/baza-koktajli" },
+        { label: "REALIZACJE", href: "/realizacje" },
     ],
     contact: {
         email: "hello@acme.com",
