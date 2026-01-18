@@ -123,10 +123,10 @@ export function Hero() {
             {/* Left Side: Content */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-32 z-10 relative">
                 <div className="space-y-0 mb-20 animate-fade-in relative">
-                    <h1 className="text-8xl md:text-[140px] font-[family-name:var(--font-caveat)] text-slate-900 leading-[0.7]">
+                    <h1 className="text-6xl md:text-[90px] font-bold uppercase tracking-tighter font-[family-name:var(--font-montserrat)] text-slate-900 leading-[0.8]">
                         Moment
                     </h1>
-                    <h1 className="text-6xl md:text-[100px] font-[family-name:var(--font-caveat)] text-slate-900 leading-[0.7] pl-8">
+                    <h1 className="text-4xl md:text-[60px] font-bold uppercase tracking-widest font-[family-name:var(--font-montserrat)] text-slate-900 leading-[0.8] pl-2 opacity-80">
                         drink bar
                     </h1>
                 </div>

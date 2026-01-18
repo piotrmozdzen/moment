@@ -1,63 +1,66 @@
+"use client";
+
 import Link from "next/link";
-import { siteConfig } from "@/lib/site-config";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 export function Footer() {
     return (
-        <footer className="border-t bg-slate-50 dark:bg-slate-950">
-            <div className="container mx-auto px-4 py-12 md:px-6 lg:py-16">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-                    <div className="space-y-4">
-                        <h3 className="text-lg font-bold text-primary">{siteConfig.name}</h3>
-                        <p className="text-sm text-slate-600 dark:text-slate-400">
-                            {siteConfig.description}
-                        </p>
-                        <div className="flex space-x-4">
-                            <Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary">
-                                <Twitter size={20} />
-                                <span className="sr-only">Twitter</span>
+        <footer className="bg-brand-cream pt-24 pb-12 border-t border-slate-900/10 px-8 md:px-16 font-sans">
+            <div className="max-w-[1920px] mx-auto">
+                <div className="flex flex-col md:flex-row justify-between min-h-[250px] text-[16px] text-[#111111] mb-6">
+
+                    {/* Column 1: Polityka */}
+                    <div className="flex flex-col py-2">
+                        <h4 className="font-bold uppercase tracking-[0.2em] mb-12">
+                            Polityka
+                        </h4>
+                        <ul className="space-y-4 font-bold text-slate-800">
+                            <li><Link href="/privacy-policy" className="hover:opacity-60 transition-opacity">Polityka prywatności</Link></li>
+                            <li><Link href="/terms" className="hover:opacity-60 transition-opacity">Regulamin</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Column 2: Linki */}
+                    <div className="flex flex-col py-2">
+                        <h4 className="font-bold uppercase tracking-[0.2em] mb-12">
+                            Linki
+                        </h4>
+                        <ul className="space-y-4 font-bold text-slate-800">
+                            <li><Link href="#offer" className="hover:opacity-60 transition-opacity">Oferta</Link></li>
+                            <li><Link href="#cocktails" className="hover:opacity-60 transition-opacity">Baza koktajli</Link></li>
+                            <li><Link href="#portfolio" className="hover:opacity-60 transition-opacity">Realizacje</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Column 3: Kontakt */}
+                    <div className="flex flex-col items-start md:items-start w-full md:max-w-xs py-2">
+                        <h4 className="font-bold uppercase tracking-[0.2em] mb-12">
+                            Kontakt
+                        </h4>
+                        <div className="space-y-4 font-bold text-slate-800">
+                            <p><a href="mailto:moment.drinkbar@gmail.com" className="hover:opacity-60 transition-opacity">moment.drinkbar@gmail.com</a></p>
+                            <p className="leading-relaxed">
+                                Lublin, Polska
+                            </p>
+                            <p><a href="tel:+48797812612" className="hover:opacity-60 transition-opacity">+48 797 812 612</a></p>
+                        </div>
+
+                        <div className="flex gap-4 pt-8">
+                            <Link href="#" className="text-slate-900 hover:opacity-60 transition-opacity">
+                                <Facebook size={20} fill="currentColor" />
                             </Link>
-                            <Link href={siteConfig.links.github} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary">
-                                <Github size={20} />
-                                <span className="sr-only">GitHub</span>
-                            </Link>
-                            <Link href={siteConfig.links.linkedin} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-primary">
-                                <Linkedin size={20} />
-                                <span className="sr-only">LinkedIn</span>
+                            <Link href="#" className="text-slate-900 hover:opacity-60 transition-opacity">
+                                <Instagram size={20} />
                             </Link>
                         </div>
                     </div>
-
-                    <div>
-                        <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-100">Company</h4>
-                        <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                            <li><Link href="/about" className="hover:text-primary">About Us</Link></li>
-                            <li><Link href="/services" className="hover:text-primary">Services</Link></li>
-                            <li><Link href="/contact" className="hover:text-primary">Careers</Link></li>
-                            <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-100">Resources</h4>
-                        <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                            <li><Link href="#" className="hover:text-primary">Blog</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Case Studies</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Support</Link></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-100">Contact</h4>
-                        <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                            <li>{siteConfig.contact.address}</li>
-                            <li><a href={`mailto:${siteConfig.contact.email}`} className="hover:text-primary">{siteConfig.contact.email}</a></li>
-                            <li><a href={`tel:${siteConfig.contact.phone}`} className="hover:text-primary">{siteConfig.contact.phone}</a></li>
-                        </ul>
-                    </div>
                 </div>
-                <div className="mt-12 border-t pt-8 text-center text-sm text-slate-500">
-                    © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+
+                {/* Bottom Center: Copyright */}
+                <div className="flex justify-center items-center pt-4 border-t border-slate-900/5">
+                    <div className="font-bold uppercase tracking-[0.3em] text-[14px] text-slate-900">
+                        {new Date().getFullYear()} © MOMENT DRINK BAR
+                    </div>
                 </div>
             </div>
         </footer>

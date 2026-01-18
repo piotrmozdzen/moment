@@ -24,7 +24,7 @@ export function Process() {
 
                     {/* Left Column: Label */}
                     <div className="w-full lg:w-1/4 mb-16 lg:mb-0">
-                        <h2 className="text-base font-bold uppercase tracking-[0.3em] text-slate-800 font-[family-name:var(--font-montserrat)] [writing-mode:vertical-lr] rotate-180">
+                        <h2 className="text-lg font-bold uppercase tracking-[0.3em] text-slate-800 font-[family-name:var(--font-montserrat)] [writing-mode:vertical-lr] rotate-180">
                             Jak pracujemy?
                         </h2>
                     </div>

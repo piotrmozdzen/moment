@@ -10,7 +10,7 @@ export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="sticky top-0 z-[100] w-full border-b bg-brand-cream font-[family-name:var(--font-montserrat)]">
+        <nav className="sticky top-0 z-[100] w-full border-b bg-brand-cream font-sans">
             <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6 relative">
 
                 {/* Mobile Menu Toggle */}
@@ -63,7 +63,7 @@ export function Navbar() {
 
             {/* Mobile Nav */}
             {isOpen && (
-                <div className="md:hidden border-t bg-brand-cream p-4 font-[family-name:var(--font-montserrat)]">
+                <div className="md:hidden border-t bg-brand-cream p-4 font-sans">
                     <div className="flex flex-col space-y-4 items-center">
                         {siteConfig.navItems.map((item) => (
                             <Link
