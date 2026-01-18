@@ -24,13 +24,13 @@ export function Process() {
 
                     {/* Left Column: Label */}
                     <div className="w-full lg:w-1/4 mb-16 lg:mb-0">
-                        <h2 className="text-base font-bold uppercase tracking-[0.3em] text-slate-800 font-[family-name:var(--font-montserrat)] sticky top-32">
+                        <h2 className="text-base font-bold uppercase tracking-[0.3em] text-slate-800 font-[family-name:var(--font-montserrat)] [writing-mode:vertical-lr] rotate-180">
                             Jak pracujemy?
                         </h2>
                     </div>
 
                     {/* Right Column: Staggered Content */}
-                    <div className="w-full lg:w-3/4 lg:pl-24 lg:border-l border-slate-900/10 space-y-0">
+                    <div className="w-full lg:w-3/4 lg:pl-24 lg:border-l border-slate-900/10 space-y-0 relative">
 
                         {/* Block 1: Left */}
                         <div className="flex justify-start relative group">

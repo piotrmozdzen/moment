@@ -10,7 +10,7 @@ export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="sticky top-0 z-50 w-full border-b bg-brand-cream font-[family-name:var(--font-montserrat)]">
+        <nav className="sticky top-0 z-[100] w-full border-b bg-brand-cream font-[family-name:var(--font-montserrat)]">
             <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6 relative">
 
                 {/* Mobile Menu Toggle */}
