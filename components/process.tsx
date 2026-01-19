@@ -24,13 +24,13 @@ export function Process() {
 
                     {/* Left Column: Label */}
                     <div className="w-full lg:w-1/4 mb-16 lg:mb-0">
-                        <h2 className="text-lg font-bold uppercase tracking-[0.3em] text-slate-800 font-montserrat [writing-mode:vertical-lr] rotate-180">
+                        <h2 className="text-lg font-bold uppercase tracking-[0.3em] text-brand-cream font-montserrat [writing-mode:vertical-lr] rotate-180">
                             Jak pracujemy?
                         </h2>
                     </div>
 
                     {/* Right Column: Staggered Content */}
-                    <div className="w-full lg:w-3/4 lg:pl-24 lg:border-l border-slate-900/10 space-y-0 relative">
+                    <div className="w-full lg:w-3/4 lg:pl-24 lg:border-l border-brand-cream/20 space-y-0 relative">
 
                         {/* Block 1: Left */}
                         <div className="flex justify-start relative group">
@@ -38,15 +38,15 @@ export function Process() {
                                 <div className="flex items-center gap-6 mb-6">
                                     <div className="relative w-14 h-14 flex items-center justify-center shrink-0">
                                         <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
-                                            <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-slate-900/30" />
+                                            <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-brand-cream/30" />
                                         </svg>
-                                        <span className="text-lg font-bold font-montserrat text-slate-900/60">01</span>
+                                        <span className="text-lg font-bold font-montserrat text-brand-cream/60">01</span>
                                     </div>
-                                    <h3 className="text-xl font-bold uppercase font-montserrat text-slate-900 tracking-wide">
+                                    <h3 className="text-xl font-bold uppercase font-montserrat text-brand-cream tracking-wide">
                                         Co zapewniamy:
                                     </h3>
                                 </div>
-                                <p className="text-slate-800 leading-relaxed max-w-lg font-sans">
+                                <p className="text-brand-cream/90 leading-relaxed max-w-lg font-sans">
                                     <strong>Zespół:</strong> Dwóch barmanów, pełne zaplecze (bar, szkło, sprzęt) oraz najwyższej jakości świeże składniki i syropy.
                                 </p>
                             </div>
@@ -73,16 +73,16 @@ export function Process() {
                                     <div className="flex items-center justify-end md:justify-start gap-6 mb-6">
                                         <div className="relative w-14 h-14 flex items-center justify-center shrink-0 order-2 md:order-1">
                                             <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
-                                                <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-slate-900/30" />
+                                                <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-brand-cream/30" />
                                             </svg>
-                                            <span className="text-lg font-bold font-montserrat text-slate-900/60">02</span>
+                                            <span className="text-lg font-bold font-montserrat text-brand-cream/60">02</span>
                                         </div>
-                                        <h3 className="text-xl font-bold uppercase font-montserrat text-slate-900 tracking-wide order-1 md:order-2">
+                                        <h3 className="text-xl font-bold uppercase font-montserrat text-brand-cream tracking-wide order-1 md:order-2">
                                             Harmonogram:
                                         </h3>
                                     </div>
                                     <div className="flex flex-col items-end md:items-start">
-                                        <p className="text-slate-800 leading-relaxed max-w-lg font-sans">
+                                        <p className="text-brand-cream/90 leading-relaxed max-w-lg font-sans">
                                             Montaż <strong>2 godziny wcześniej</strong>. Serwujemy od pierwszego tańca do <strong>01:00</strong>. Chcecie dłużej? Żaden problem.
                                         </p>
                                     </div>
@@ -111,15 +111,15 @@ export function Process() {
                                     <div className="flex items-center gap-6 mb-6">
                                         <div className="relative w-14 h-14 flex items-center justify-center shrink-0">
                                             <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
-                                                <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-slate-900/30" />
+                                                <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-brand-cream/30" />
                                             </svg>
-                                            <span className="text-lg font-bold font-montserrat text-slate-900/60">03</span>
+                                            <span className="text-lg font-bold font-montserrat text-brand-cream/60">03</span>
                                         </div>
-                                        <h3 className="text-xl font-bold uppercase font-montserrat text-slate-900 tracking-wide">
+                                        <h3 className="text-xl font-bold uppercase font-montserrat text-brand-cream tracking-wide">
                                             Czego potrzebujemy?
                                         </h3>
                                     </div>
-                                    <p className="text-slate-800 leading-relaxed max-w-lg font-sans">
+                                    <p className="text-brand-cream/90 leading-relaxed max-w-lg font-sans">
                                         Od Was tylko 3 rzeczy: <strong>6–12 butelek wódki</strong>, miejsce dla nas przy stole i ustalenie z salą kwestii mycia szkła.
                                     </p>
                                 </div>
@@ -147,16 +147,16 @@ export function Process() {
                                     <div className="flex items-center justify-end md:justify-start gap-6 mb-6">
                                         <div className="relative w-14 h-14 flex items-center justify-center shrink-0 order-2 md:order-1">
                                             <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
-                                                <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-slate-900/30" />
+                                                <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-brand-cream/30" />
                                             </svg>
-                                            <span className="text-lg font-bold font-montserrat text-slate-900/60">04</span>
+                                            <span className="text-lg font-bold font-montserrat text-brand-cream/60">04</span>
                                         </div>
-                                        <h3 className="text-xl font-bold uppercase font-montserrat text-slate-900 tracking-wide order-1 md:order-2">
+                                        <h3 className="text-xl font-bold uppercase font-montserrat text-brand-cream tracking-wide order-1 md:order-2">
                                             Chcecie bawić się dłużej?
                                         </h3>
                                     </div>
                                     <div className="flex flex-col items-end md:items-start">
-                                        <p className="text-slate-800 leading-relaxed max-w-lg italic font-medium">
+                                        <p className="text-brand-cream/90 leading-relaxed max-w-lg italic font-medium">
                                             Przedłużenie serwisu to koszt zaledwie <strong>1/8 całkowitej ceny</strong> za każdą dodatkową godzinę wspólnej zabawy.
                                         </p>
                                     </div>

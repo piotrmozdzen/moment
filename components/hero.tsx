@@ -62,8 +62,8 @@ function Polaroid({
 
             {/* Caption Area */}
             {caption && (
-                <div className="pt-2 flex items-center justify-center">
-                    <p className="font-caveat text-slate-800 text-lg md:text-xl text-center leading-none transform -rotate-1">
+                <div className="pt-3 flex items-center justify-center">
+                    <p className="font-caveat text-brand-text text-lg md:text-xl text-center leading-none">
                         {caption}
                     </p>
                 </div>
@@ -82,129 +82,103 @@ function Polaroid({
 
 export function Hero() {
     const photos = [
-        {
-            src: "/images/hero-wesela.png",
-            alt: "Wesela",
-            caption: "Wesela",
-            rotation: "rotate-[8deg]",
-            className: "top-[8%] right-[12%] w-36 md:w-44 lg:w-[200px]",
-            zIndex: "z-20",
-            hasTapeBottom: true
-        },
+        // Top Left - Large (Base Layer)
         {
             src: "/images/hero-barman.jpg",
             alt: "Nasi barmani",
             caption: "Imprezy okolicznościowe",
-            rotation: "rotate-[-3deg]",
-            className: "top-[5%] left-[8%] w-48 md:w-60 lg:w-[300px]",
+            rotation: "rotate-[-2deg]",
+            className: "top-[8%] left-[3%] w-40 md:w-52 lg:w-[240px]",
             zIndex: "z-10",
             hasTapeTop: true
         },
+        // Top Right - Med (Elevated, Slight Overlap)
         {
-            src: "/images/hero-moment-new.jpg",
-            alt: "Imprezy okolicznościowe",
-            caption: "Urodziny",
-            rotation: "rotate-[5deg]",
-            className: "top-[50%] right-[8%] w-44 md:w-56 lg:w-[260px]",
+            src: "/images/hero-wesela.png",
+            alt: "Wesela",
+            caption: "Wesela",
+            rotation: "rotate-[6deg]",
+            className: "top-[5%] right-[2%] w-40 md:w-52 lg:w-[240px]",
             zIndex: "z-30",
-            hasTapeTop: true
+            hasTapeBottom: true
         },
+        // Mid Left - Med (Overlaps Top Left)
         {
             src: "/images/hero-okolicznosciowe.jpg",
             alt: "Moment Drink Bar",
             caption: "Moment",
-            rotation: "rotate-[-8deg]",
-            className: "top-[54%] left-[10%] w-44 md:w-56 lg:w-[260px]",
+            rotation: "rotate-[-5deg]",
+            className: "top-[48%] left-[8%] w-40 md:w-52 lg:w-[240px]",
             zIndex: "z-40",
             hasTapeBottom: true
+        },
+        // Mid Right - Med (Between Top and Bottom Right)
+        {
+            src: "/images/hero-moment-new.jpg",
+            alt: "Imprezy okolicznościowe",
+            caption: "Urodziny",
+            rotation: "rotate-[4deg]",
+            className: "top-[48%] right-[0%] w-44 md:w-56 lg:w-[260px]",
+            zIndex: "z-20",
+            hasTapeTop: true
+        },
+        // Center - Small (Bridges the composition)
+        {
+            src: "/images/hero-martini-splash.png",
+            alt: "Autorskie menu",
+            caption: "Autorskie drinki",
+            rotation: "rotate-[-3deg]",
+            className: "top-[28%] left-[38%] w-36 md:w-48 lg:w-[220px]",
+            zIndex: "z-50",
+            hasTapeTop: true
         }
     ];
 
     return (
-        <section className="min-h-screen w-full bg-[radial-gradient(circle_at_center,_#F2E6D9_0%,_#B8CEF2_100%)] flex flex-col lg:flex-row items-center pt-24 lg:pt-0">
-            {/* Left Side: Content */}
-            <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-32 z-10 relative">
-                <div className="space-y-0 mb-20 animate-fade-in relative">
-                    <h1 className="text-6xl md:text-[90px] font-bold uppercase tracking-tighter font-montserrat text-slate-900 leading-[0.8]">
-                        Moment
+        <section className="min-h-screen w-full bg-[#fdfdf5] relative overflow-hidden flex flex-col lg:flex-row items-center pt-24 lg:pt-0">
+            {/* Ambient Background */}
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-[#c16c4d] opacity-[0.08] blur-[120px] rounded-full" />
+                <div className="absolute bottom-[-10%] right-[-5%] w-[50%] h-[50%] bg-[#c16c4d] opacity-[0.05] blur-[100px] rounded-full" />
+            </div>
+            {/* Left Side: Content - 40% width */}
+            <div className="w-full lg:w-[40%] flex flex-col justify-center px-8 md:px-12 lg:pl-24 lg:pr-0 z-10 relative">
+                <div className="flex flex-col items-start text-left max-w-xl">
+                    <span className="text-sm font-bold tracking-[0.3em] text-brand-text-light uppercase pl-1 mb-12">
+                        Mobilny Drink Bar
+                    </span>
+
+                    <h1 className="text-5xl md:text-7xl font-bold font-montserrat text-brand-text leading-tight mb-8">
+                        Twoje przyjęcie,
+                        <span className="font-caveat font-normal text-brand-blue block mt-2 text-6xl md:text-8xl">
+                            nasze koktajle.
+                        </span>
                     </h1>
-                    <h1 className="text-4xl md:text-[60px] font-bold uppercase tracking-widest font-montserrat text-slate-900 leading-[0.8] pl-2 opacity-80">
-                        drink bar
-                    </h1>
-                </div>
 
-                <div className="space-y-12 max-w-2xl relative">
-                    {/* Zatrzymaj moment - Quote Layout */}
-                    <div className="relative inline-block">
-                        {/* Opening Quote SVG */}
-                        <div className="absolute -top-10 -left-16 opacity-15">
-                            <svg width="100" height="100" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#475569" d="M46,30.7c-0.2,3.5-1.8,8.8-8.3,13.9c-0.3,0.2-0.7,0.4-1,0.4c-0.5,0-1-0.2-1.3-0.7c-0.6-0.8-0.4-1.8,0.3-2.4
-                                    c5.3-4.2,6.7-8.3,7-11.1c-0.7,0.4-1.6,0.7-2.5,0.7c-2.8,0-5.1-2.4-5.1-5.3s2.3-5.3,5.1-5.3c0.6,0,1.2,0.2,1.8,0.4l0,0
-                                    c0,0,0.2,0.1,0.6,0.3c0,0,0,0,0.1,0c0,0,0,0,0,0c0.2,0.1,0.5,0.3,0.8,0.6c0.1,0.1,0.2,0.2,0.4,0.4C44.9,23.9,46.3,26.2,46,30.7z
-                                    M23.2,31.6c-2.8,0-5.1-2.4-5.1-5.3s2.3-5.3,5.1-5.3c0.6,0,1.2,0.2,1.8,0.4l0,0c0,0,0.2,0.1,0.6,0.3c0,0,0,0,0.1,0c0,0,0,0,0,0
-                                    c0.2,0.1,0.5,0.3,0.8,0.6c0.1,0.1,0.2,0.2,0.4,0.4c1.3,1.2,2.7,3.6,2.3,8.1c-0.2,3.5-1.8,8.8-8.3,13.9c-0.3,0.2-0.7,0.4-1,0.4
-                                    c-0.5,0-1-0.2-1.3-0.7c-0.6-0.8-0.4-1.8,0.3-2.4c5.3-4.2,6.7-8.3,7-11.1C24.9,31.3,24.1,31.6,23.2,31.6z"/>
-                            </svg>
-                        </div>
+                    <p className="text-lg text-brand-text-light leading-relaxed max-w-md pl-1 font-sans mb-8">
+                        Tworzymy atmosferę, w której goście czują się wyjątkowo.
+                        Zadbamy o to, by wasze wydarzenie było niezapomniane.
+                    </p>
 
-                        <h2 className="text-3xl md:text-5xl font-caveat font-bold text-slate-800 leading-tight italic relative z-10 px-4">
-                            Zatrzymaj moment w każdym kieliszku.
-                        </h2>
-
-                        {/* Closing Quote SVG */}
-                        <div className="absolute -bottom-12 -right-16 opacity-15 rotate-180">
-                            <svg width="100" height="100" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#475569" d="M46,30.7c-0.2,3.5-1.8,8.8-8.3,13.9c-0.3,0.2-0.7,0.4-1,0.4c-0.5,0-1-0.2-1.3-0.7c-0.6-0.8-0.4-1.8,0.3-2.4
-                                    c5.3-4.2,6.7-8.3,7-11.1c-0.7,0.4-1.6,0.7-2.5,0.7c-2.8,0-5.1-2.4-5.1-5.3s2.3-5.3,5.1-5.3c0.6,0,1.2,0.2,1.8,0.4l0,0
-                                    c0,0,0.2,0.1,0.6,0.3c0,0,0,0,0.1,0c0,0,0,0,0,0c0.2,0.1,0.5,0.3,0.8,0.6c0.1,0.1,0.2,0.2,0.4,0.4C44.9,23.9,46.3,26.2,46,30.7z
-                                    M23.2,31.6c-2.8,0-5.1-2.4-5.1-5.3s2.3-5.3,5.1-5.3c0.6,0,1.2,0.2,1.8,0.4l0,0c0,0,0.2,0.1,0.6,0.3c0,0,0,0,0.1,0c0,0,0,0,0,0
-                                    c0.2,0.1,0.5,0.3,0.8,0.6c0.1,0.1,0.2,0.2,0.4,0.4c1.3,1.2,2.7,3.6,2.3,8.1c-0.2,3.5-1.8,8.8-8.3,13.9c-0.3,0.2-0.7,0.4-1,0.4
-                                    c-0.5,0-1-0.2-1.3-0.7c-0.6-0.8-0.4-1.8,0.3-2.4c5.3-4.2,6.7-8.3,7-11.1C24.9,31.3,24.1,31.6,23.2,31.6z"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div className="space-y-4">
-                        <button className="group relative flex items-center gap-4 text-slate-900 font-bold uppercase tracking-[0.2em] text-sm md:text-base">
-                            <span className="relative">
+                    <div className="pt-4 pl-1">
+                        <button className="group relative inline-block">
+                            <span className="relative z-10 font-bold uppercase tracking-[0.15em] text-brand-text text-sm md:text-base">
                                 Zarezerwuj termin
-                                <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-slate-900 transition-all duration-300 group-hover:w-full" />
                             </span>
-                            <div className="flex items-center justify-center w-12 h-12 rounded-full border border-slate-900/20 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
-                                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                            </div>
                         </button>
                     </div>
+                </div>
 
-                    <div className="flex flex-wrap gap-12 pt-6">
-                        <div className="flex items-center gap-4 group cursor-pointer">
-                            <div className="w-8 h-8 opacity-70 group-hover:opacity-100 transition-opacity">
-                                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 15L19 4H5L12 15Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M12 15V21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M8 21H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    <circle cx="12" cy="9" r="1" fill="currentColor" />
-                                </svg>
-                            </div>
-                            <span className="font-caveat text-slate-700 font-bold text-2xl group-hover:text-slate-900 transition-colors">Wesela</span>
-                        </div>
-                        <div className="flex items-center gap-4 group cursor-pointer">
-                            <div className="w-8 h-8 opacity-70 group-hover:opacity-100 transition-opacity">
-                                <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 11V20C9 21.1046 9.89543 22 11 22H13C14.1046 22 15 21.1046 15 20V11C15 9.89543 14.1046 9 13 9V4H11V9C9.89543 9 9 9.89543 9 11Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M11 2H13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                </svg>
-                            </div>
-                            <span className="font-caveat text-slate-700 font-bold text-2xl whitespace-nowrap group-hover:text-slate-900 transition-colors">Imprezy okolicznościowe</span>
-                        </div>
-                    </div>
+                <div className="flex items-center gap-3 pt-12 pl-1">
+                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Wesela</span>
+                    <span className="text-brand-text-light text-2xl">•</span>
+                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Imprezy okolicznościowe</span>
                 </div>
             </div>
 
-            {/* Right Side: Cascading Polaroids */}
-            <div className="w-full lg:w-1/2 h-[850px] lg:h-screen relative flex items-center justify-center lg:mt-0">
-                <div className="relative w-full h-full max-w-[700px] mx-auto overflow-hidden py-16 px-8">
+            {/* Right Side: Cascading Polaroids - 60% width */}
+            <div className="w-full lg:w-[60%] h-[850px] lg:h-screen relative flex items-center justify-center lg:mt-0">
+                <div className="relative w-full h-full max-w-[900px] mx-auto py-16 px-8">
                     {photos.map((photo, index) => (
                         <Polaroid
                             key={index}
@@ -213,6 +187,6 @@ export function Hero() {
                     ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

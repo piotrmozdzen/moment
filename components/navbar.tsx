@@ -15,7 +15,7 @@ export function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden p-2 text-slate-900 hover:text-slate-600"
+                    className="md:hidden p-2 text-brand-text hover:text-brand-text-light"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -27,7 +27,7 @@ export function Navbar() {
                         <Link
                             key={item.href}
                             href={item.href}
-                            className="text-sm font-bold tracking-widest text-slate-900 hover:text-slate-600 uppercase"
+                            className="text-sm font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
                         >
                             {item.label}
                         </Link>
@@ -37,8 +37,8 @@ export function Navbar() {
                 {/* Center: Logo */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none md:pointer-events-auto">
                     <Link href="/" className="flex flex-col items-center font-montserrat">
-                        <span className="text-3xl font-bold tracking-[0.2em] text-slate-900 leading-none">MOMENT</span>
-                        <span className="text-[0.7rem] font-bold tracking-[0.3em] text-slate-600 uppercase mt-1">Drink Bar</span>
+                        <span className="text-3xl font-bold tracking-[0.2em] text-brand-text leading-none">MOMENT</span>
+                        <span className="text-[0.7rem] font-bold tracking-[0.3em] text-brand-text-light uppercase mt-1">Drink Bar</span>
                     </Link>
                 </div>
 
@@ -46,15 +46,15 @@ export function Navbar() {
                 <div className="hidden md:flex items-center gap-6">
                     <Link
                         href="/contact"
-                        className="text-sm font-bold tracking-widest text-slate-900 hover:text-slate-600 uppercase"
+                        className="text-sm font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
                     >
                         KONTAKT
                     </Link>
                     <div className="flex items-center gap-4">
-                        <Link href={siteConfig.links.instagram || "#"} className="text-slate-900 hover:text-slate-600">
+                        <Link href={siteConfig.links.instagram || "#"} className="text-brand-text hover:text-brand-text-light">
                             <Instagram size={20} />
                         </Link>
-                        <Link href={siteConfig.links.facebook || "#"} className="text-slate-900 hover:text-slate-600">
+                        <Link href={siteConfig.links.facebook || "#"} className="text-brand-text hover:text-brand-text-light">
                             <Facebook size={20} />
                         </Link>
                     </div>
@@ -69,7 +69,7 @@ export function Navbar() {
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className="text-lg font-bold tracking-widest text-slate-900 hover:text-slate-600 uppercase"
+                                className="text-lg font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}
@@ -77,16 +77,16 @@ export function Navbar() {
                         ))}
                         <Link
                             href="/contact"
-                            className="text-lg font-bold tracking-widest text-slate-900 hover:text-slate-600 uppercase"
+                            className="text-lg font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
                             onClick={() => setIsOpen(false)}
                         >
                             KONTAKT
                         </Link>
                         <div className="flex items-center gap-6 mt-4">
-                            <Link href={siteConfig.links.instagram || "#"} className="text-slate-900 hover:text-slate-600">
+                            <Link href={siteConfig.links.instagram || "#"} className="text-brand-text hover:text-brand-text-light">
                                 <Instagram size={24} />
                             </Link>
-                            <Link href={siteConfig.links.facebook || "#"} className="text-slate-900 hover:text-slate-600">
+                            <Link href={siteConfig.links.facebook || "#"} className="text-brand-text hover:text-brand-text-light">
                                 <Facebook size={24} />
                             </Link>
                         </div>

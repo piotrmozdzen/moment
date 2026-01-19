@@ -4,7 +4,9 @@
   --color-brand-beige: #F2E6D9;
   --color-brand-beige-light: #FFF6D6;
   --color-brand-cream: #FFFFF3;
-  --color-brand-blue: #B8CEF2;
+  --color-brand-blue: #c16c4d;
+  --color-brand-text: #332f2e;
+  --color-brand-text-light: #5d5552;
 
   --font-sans: 'Montserrat', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
@@ -15,7 +17,7 @@
 
 @layer base {
   body {
-    @apply bg-brand-cream text-slate-900 font-sans;
+    @apply bg-brand-cream text-brand-text font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
