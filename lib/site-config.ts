@@ -1,14 +1,11 @@
 export const siteConfig = {
     name: "MOMENT DRINK BAR",
-    description: "Building the future with modern solutions. We provide top-tier services for businesses looking to scale.",
-    url: "https://acme-example.com",
-    ogImage: "https://acme-example.com/og.jpg",
+    description: "Mobilny Drink Bar na Twoje wesele i imprezę okolicznościową.",
+    url: "https://moment-drinkbar.pl",
+    ogImage: "https://moment-drinkbar.pl/og.jpg",
     links: {
-        twitter: "https://twitter.com/acme",
-        github: "https://github.com/acme",
-        linkedin: "https://linkedin.com/company/acme",
-        instagram: "https://instagram.com",
-        facebook: "https://facebook.com",
+        instagram: "https://instagram.com/moment_drinkbar",
+        facebook: "https://facebook.com/moment.drinkbar",
     },
     navItems: [
         { label: "O NAS", href: "/o-nas" },
@@ -17,9 +14,9 @@ export const siteConfig = {
         { label: "REALIZACJE", href: "/realizacje" },
     ],
     contact: {
-        email: "hello@acme.com",
-        phone: "+1 (555) 123-4567",
-        address: "123 Innovation Dr, Tech City, TC 90210",
+        email: "kontakt@moment-drinkbar.pl",
+        phone: "+48 123 456 789",
+        address: "Polska",
     }
 };
 

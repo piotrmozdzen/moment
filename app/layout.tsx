@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   keywords: ["Next.js", "React", "Tailwind CSS", "Server Components", "Radix UI"],
   authors: [
     {
-      name: "Acme Corp",
-      url: "https://acme-example.com",
+      name: "Moment Drink Bar",
+      url: "https://moment-drinkbar.pl",
     },
   ],
-  creator: "Acme Corp",
+  creator: "Moment Drink Bar",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "pl_PL",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/og.jpg`],
-    creator: "@acme",
+    creator: "@moment_drinkbar",
   },
   icons: {
     icon: "/favicon.ico",

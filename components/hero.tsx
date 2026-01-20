@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
 
 function Tape({ className }: { className?: string }) {
     return (
@@ -88,7 +87,7 @@ export function Hero() {
             alt: "Nasi barmani",
             caption: "Imprezy okolicznościowe",
             rotation: "rotate-[-2deg]",
-            className: "top-[8%] left-[3%] w-40 md:w-52 lg:w-[240px]",
+            className: "top-[8%] left-[3%] w-44 md:w-56 lg:w-[260px]",
             zIndex: "z-10",
             hasTapeTop: true
         },
@@ -98,40 +97,40 @@ export function Hero() {
             alt: "Wesela",
             caption: "Wesela",
             rotation: "rotate-[6deg]",
-            className: "top-[5%] right-[2%] w-40 md:w-52 lg:w-[240px]",
+            className: "top-[5%] right-[2%] w-44 md:w-56 lg:w-[260px]",
             zIndex: "z-30",
             hasTapeBottom: true
         },
         // Mid Left - Med (Overlaps Top Left)
         {
-            src: "/images/hero-okolicznosciowe.jpg",
+            src: "/images/moment-polaroid.jpg",
             alt: "Moment Drink Bar",
-            caption: "Moment",
+            caption: "Sprawdź ofertę",
             rotation: "rotate-[-5deg]",
-            className: "top-[48%] left-[8%] w-40 md:w-52 lg:w-[240px]",
+            className: "top-[48%] left-[8%] w-44 md:w-56 lg:w-[260px]",
             zIndex: "z-40",
             hasTapeBottom: true
         },
         // Mid Right - Med (Between Top and Bottom Right)
         {
-            src: "/images/hero-moment-new.jpg",
-            alt: "Imprezy okolicznościowe",
-            caption: "Urodziny",
+            src: "/images/mocktaile-2.jpg",
+            alt: "Mocktaile",
+            caption: "Mocktaile",
             rotation: "rotate-[4deg]",
-            className: "top-[48%] right-[0%] w-44 md:w-56 lg:w-[260px]",
+            className: "top-[48%] right-[0%] w-48 md:w-60 lg:w-[280px]",
             zIndex: "z-20",
             hasTapeTop: true
         },
         // Center - Small (Bridges the composition)
         {
-            src: "/images/hero-martini-splash.png",
-            alt: "Autorskie menu",
+            src: "/images/autorskie-drinki.jpg",
+            alt: "Autorskie drinki",
             caption: "Autorskie drinki",
             rotation: "rotate-[-3deg]",
-            className: "top-[28%] left-[38%] w-36 md:w-48 lg:w-[220px]",
+            className: "top-[28%] left-[38%] w-40 md:w-52 lg:w-[240px]",
             zIndex: "z-50",
             hasTapeTop: true
-        }
+        },
     ];
 
     return (
@@ -144,9 +143,7 @@ export function Hero() {
             {/* Left Side: Content - 40% width */}
             <div className="w-full lg:w-[40%] flex flex-col justify-center px-8 md:px-12 lg:pl-24 lg:pr-0 z-10 relative">
                 <div className="flex flex-col items-start text-left max-w-xl">
-                    <span className="text-sm font-bold tracking-[0.3em] text-brand-text-light uppercase pl-1 mb-12">
-                        Mobilny Drink Bar
-                    </span>
+
 
                     <h1 className="text-5xl md:text-7xl font-bold font-montserrat text-brand-text leading-tight mb-8">
                         Twoje przyjęcie,
@@ -170,9 +167,11 @@ export function Hero() {
                 </div>
 
                 <div className="flex items-center gap-3 pt-12 pl-1">
-                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Wesela</span>
+                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Mobilny</span>
                     <span className="text-brand-text-light text-2xl">•</span>
-                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Imprezy okolicznościowe</span>
+                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Drink</span>
+                    <span className="text-brand-text-light text-2xl">•</span>
+                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Bar</span>
                 </div>
             </div>
 

@@ -1,12 +1,12 @@
 "use client";
 
-import { Package, Clock, Check, Plus } from "lucide-react";
+
 
 export function Process() {
     return (
         <section className="relative bg-brand-blue overflow-hidden">
             {/* Beige Spacer above the wave */}
-            <div className="h-48 bg-brand-cream w-full" />
+            <div className="h-32 bg-brand-cream w-full" />
 
             {/* Wavy Background Divider */}
             <div className="relative w-full overflow-hidden leading-[0] transform rotate-180 bg-brand-cream">

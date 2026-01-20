@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, Instagram, Facebook } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
-import { cn } from "@/lib/utils";
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

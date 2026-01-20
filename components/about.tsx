@@ -17,13 +17,14 @@ export function About() {
             { threshold: 0.3 }
         );
 
-        if (titleRef.current) {
-            observer.observe(titleRef.current);
+        const titleElement = titleRef.current;
+        if (titleElement) {
+            observer.observe(titleElement);
         }
 
         return () => {
-            if (titleRef.current) {
-                observer.unobserve(titleRef.current);
+            if (titleElement) {
+                observer.unobserve(titleElement);
             }
         };
     }, []);
@@ -154,7 +155,7 @@ export function About() {
                             Nawet najlepszy alkohol potrzebuje odpowiedniej oprawy.
                             Nasz zespół to zgrana ekipa barmanów, którzy tworzą niepowtarzalną atmosferę przy barze.
                             <br />
-                            Nie jesteśmy tu tylko "do pracy" – jesteśmy tu dla Was i Waszych gości.
+                            Nie jesteśmy tu tylko &quot;do pracy&quot; – jesteśmy tu dla Was i Waszych gości.
                             Łączymy barmańską wiedzę z wysoką kulturą osobistą i dużą dawką uśmiechu.
                         </p>
                     </div>

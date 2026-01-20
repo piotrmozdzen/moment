@@ -1,23 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { cn } from "@/lib/utils";
 
 export function InquiryForm() {
-    const [formData, setFormData] = useState({
-        email: "",
-        firstName: "",
-        lastName: "",
-        companyName: "",
-        city: "",
-        phone: "",
-        eventType: "",
-        interests: {
-            cocktails: false,
-            mocktails: false,
-            onTap: false
-        }
-    });
 
     return (
         <section id="inquiry" className="bg-[#c16c4d] py-24 md:py-32 border-b border-slate-900/10 px-8">

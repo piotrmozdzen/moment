@@ -1,6 +1,6 @@
 "use client";
 
-import { Instagram, Facebook } from "lucide-react";
+
 import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 
