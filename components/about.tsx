@@ -61,7 +61,7 @@ export function About() {
             </div>
 
             {/* Block 1: Text Left | Image Right */}
-            <div className="flex flex-col md:flex-row h-auto md:h-[700px] w-full overflow-hidden border-t border-brand-text/10">
+            <div className="flex flex-col md:flex-row h-auto md:h-[700px] w-full overflow-hidden">
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-r md:border-r-0">
                     <div className="max-w-xl mx-auto w-full relative z-10">
                         <h3 className="text-2xl font-bold mb-8 font-montserrat uppercase tracking-wide relative">
@@ -145,7 +145,7 @@ export function About() {
             </div>
 
             {/* Block 3: Text Left | Image Right */}
-            <div className="flex flex-col md:flex-row h-auto md:h-[700px] w-full overflow-hidden border-t border-b border-brand-text/10">
+            <div className="flex flex-col md:flex-row h-auto md:h-[700px] w-full overflow-hidden border-t border-brand-text/10">
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-r md:border-r-0">
                     <div className="max-w-xl mx-auto w-full relative z-10">
                         <h3 className="text-2xl font-bold mb-8 font-montserrat uppercase tracking-wide">

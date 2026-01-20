@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 function Tape({ className }: { className?: string }) {
     return (
@@ -80,6 +83,15 @@ function Polaroid({
 }
 
 export function Hero() {
+    // SVG animation is handled via CSS group-hover on the button
+
+    const scrollToInquiry = () => {
+        const inquirySection = document.getElementById('inquiry');
+        if (inquirySection) {
+            inquirySection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     const photos = [
         // Top Left - Large (Base Layer)
         {
@@ -157,22 +169,48 @@ export function Hero() {
                         Zadbamy o to, by wasze wydarzenie było niezapomniane.
                     </p>
 
-                    <div className="pt-4 pl-1">
-                        <button className="group relative inline-block">
-                            <span className="relative z-10 font-bold uppercase tracking-[0.15em] text-brand-text text-sm md:text-base">
+                    <div className="pt-4 pl-1 flex items-center gap-6">
+                        <button
+                            onClick={scrollToInquiry}
+                            className="group relative inline-block cursor-pointer peer"
+                        >
+                            <span className="relative z-10 font-caveat font-bold text-brand-text text-2xl md:text-3xl px-6 py-2 block">
                                 Zarezerwuj termin
                             </span>
+                            <svg
+                                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none overflow-visible"
+                                width="300"
+                                height="80"
+                                viewBox="0 0 300 80"
+                                fill="none"
+                            >
+                                <path
+                                    d="M265,20 C295,35 285,60 245,65 C165,75 55,70 25,50 C5,35 15,15 35,15 C90,5 210,5 265,20"
+                                    stroke="#c16c4d"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    className="transition-all duration-[800ms] ease-out [stroke-dasharray:700] [stroke-dashoffset:700] group-hover:[stroke-dashoffset:0]"
+                                />
+                            </svg>
                         </button>
+                        {/* Arrow pointing to button */}
+                        <div className="hidden md:block -mt-12 transition-opacity duration-300 peer-hover:opacity-0">
+                            <svg
+                                width="130"
+                                height="110"
+                                viewBox="0 0 191 161"
+                                fill="none"
+                                className="rotate-[-10deg]"
+                            >
+                                <path fillRule="evenodd" clipRule="evenodd" d="M183.561 45.6143C176.187 63.063 159.221 78.0911 138.545 89.0575C107.65 105.439 68.4973 112.767 41.0784 105.814C40.5153 105.663 40.173 105.086 40.315 104.529C40.4594 103.957 41.0283 103.621 41.5997 103.765C68.5941 110.607 107.135 103.324 137.555 87.1847C157.765 76.4709 174.409 61.8498 181.61 44.7898C181.837 44.2474 182.456 43.9998 182.998 44.2265C183.526 44.4507 183.788 45.0719 183.561 45.6143Z" fill="black" />
+                                <path fillRule="evenodd" clipRule="evenodd" d="M7.52203 107.103C23.6106 110.318 38.061 111.512 52.6985 121.016C53.187 121.342 53.3341 121.994 53.0078 122.483C52.6955 122.974 52.0378 123.112 51.5551 122.794C35.4473 112.34 19.5519 112.158 1.41588 107.962C0.437438 107.732 0.417386 106.978 0.427332 106.798C0.438087 106.531 0.540948 106.112 1.06417 105.87C1.16715 105.822 1.3824 105.758 1.69635 105.712C2.29933 105.636 3.53844 105.585 4.09075 105.508C5.68291 105.272 7.26012 104.997 8.85229 104.76C13.4045 104.085 17.936 103.363 22.4093 102.31C39.1505 98.3975 52.8644 95.305 62.6098 80.4116C62.9303 79.9148 63.58 79.7819 64.0767 80.1024C64.5593 80.4204 64.698 81.0782 64.38 81.5608C54.3032 96.9709 40.2015 100.323 22.8897 104.375C18.3574 105.432 13.7645 106.173 9.16742 106.854C8.6151 106.932 8.06853 107.017 7.52203 107.103Z" fill="black" />
+                            </svg>
+                        </div>
                     </div>
+
+
                 </div>
 
-                <div className="flex items-center gap-3 pt-12 pl-1">
-                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Mobilny</span>
-                    <span className="text-brand-text-light text-2xl">•</span>
-                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Drink</span>
-                    <span className="text-brand-text-light text-2xl">•</span>
-                    <span className="font-caveat text-brand-text-light font-bold text-2xl">Bar</span>
-                </div>
             </div>
 
             {/* Right Side: Cascading Polaroids - 60% width */}
