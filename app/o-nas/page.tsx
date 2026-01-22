@@ -30,9 +30,7 @@ export default function AboutPage() {
                             <h3 className="font-caveat text-3xl md:text-4xl text-brand-text-light mb-6">
                                 O nas
                             </h3>
-                            <p className="text-lg leading-relaxed font-sans text-gray-800 mb-6 font-bold">
-                                Hej! 👋 tu Barmani Moment.
-                            </p>
+
                             <p className="text-lg leading-relaxed font-sans text-gray-800">
                                 Nasz cel - sprawić, byście Wy i Wasi goście spędzili ten czas w sposób wyjątkowy. Dbamy o to, by każda chwila przy barze była okazją do odkrywania unikalnych smaków, a serwowane przez nas koktajle dopełniały atmosferę Waszej uroczystości – niezależnie od tego, czy to eleganckie wesele, czy luźna imprezka.
                             </p>

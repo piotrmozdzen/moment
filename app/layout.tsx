@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Montserrat, Caveat } from 'next/font/google'
+import { Montserrat, Caveat, Knewave } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { siteConfig } from '@/lib/site-config'
@@ -13,6 +13,11 @@ const montserrat = Montserrat({
 const caveat = Caveat({
   subsets: ['latin'],
   variable: '--font-caveat'
+})
+const knewave = Knewave({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-knewave'
 })
 
 export const metadata: Metadata = {
@@ -55,8 +60,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={cn("min-h-screen bg-background font-sans antialiased", montserrat.variable, caveat.variable)}>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className={cn("min-h-screen bg-background font-sans antialiased", montserrat.variable, caveat.variable, knewave.variable)}>
         <div className="flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">
