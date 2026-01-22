@@ -24,7 +24,7 @@ export function Process() {
 
                     {/* Left Column: Label */}
                     <div className="w-full lg:w-1/4 mb-16 lg:mb-0">
-                        <h2 className="text-lg font-bold uppercase tracking-[0.3em] text-brand-cream font-montserrat [writing-mode:vertical-lr] rotate-180">
+                        <h2 className="text-lg font-semibold text-brand-cream font-montserrat [writing-mode:vertical-lr] rotate-180">
                             Jak pracujemy?
                         </h2>
                     </div>
@@ -42,8 +42,8 @@ export function Process() {
                                         </svg>
                                         <span className="text-lg font-bold font-montserrat text-brand-cream/60">01</span>
                                     </div>
-                                    <h3 className="text-xl font-bold uppercase font-montserrat text-brand-cream tracking-wide">
-                                        Co zapewniamy:
+                                    <h3 className="text-xl font-semibold font-montserrat text-brand-cream">
+                                        Co zapewniamy?
                                     </h3>
                                 </div>
                                 <p className="text-brand-cream/90 leading-relaxed max-w-lg font-sans">
@@ -77,8 +77,8 @@ export function Process() {
                                             </svg>
                                             <span className="text-lg font-bold font-montserrat text-brand-cream/60">02</span>
                                         </div>
-                                        <h3 className="text-xl font-bold uppercase font-montserrat text-brand-cream tracking-wide order-1 md:order-2">
-                                            Harmonogram:
+                                        <h3 className="text-xl font-semibold font-montserrat text-brand-cream order-1 md:order-2">
+                                            Harmonogram
                                         </h3>
                                     </div>
                                     <div className="flex flex-col items-end md:items-start">
@@ -115,7 +115,7 @@ export function Process() {
                                             </svg>
                                             <span className="text-lg font-bold font-montserrat text-brand-cream/60">03</span>
                                         </div>
-                                        <h3 className="text-xl font-bold uppercase font-montserrat text-brand-cream tracking-wide">
+                                        <h3 className="text-xl font-semibold font-montserrat text-brand-cream">
                                             Czego potrzebujemy?
                                         </h3>
                                     </div>
@@ -151,7 +151,7 @@ export function Process() {
                                             </svg>
                                             <span className="text-lg font-bold font-montserrat text-brand-cream/60">04</span>
                                         </div>
-                                        <h3 className="text-xl font-bold uppercase font-montserrat text-brand-cream tracking-wide order-1 md:order-2">
+                                        <h3 className="text-xl font-semibold font-montserrat text-brand-cream order-1 md:order-2">
                                             Chcecie bawić się dłużej?
                                         </h3>
                                     </div>

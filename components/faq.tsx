@@ -47,7 +47,7 @@ export function FAQ() {
 
                 {/* Left Side: Title & Contact */}
                 <div className="md:w-[40%]">
-                    <h2 className="text-4xl font-bold text-brand-text mb-2 font-montserrat uppercase tracking-tight">
+                    <h2 className="text-4xl md:text-5xl font-semibold text-brand-text mb-4 font-montserrat tracking-tight leading-tight">
                         Masz pytania?
                     </h2>
                     <p className="text-3xl text-brand-text-light font-caveat mb-8">
@@ -70,7 +70,7 @@ export function FAQ() {
                                 className="w-full py-6 flex items-center justify-between text-left group cursor-pointer"
                             >
                                 <span className={cn(
-                                    "text-sm font-bold uppercase tracking-widest transition-colors",
+                                    "text-lg font-semibold transition-colors leading-snug",
                                     openIndex === index ? "text-brand-text" : "text-brand-text-light group-hover:text-brand-text"
                                 )}>
                                     {item.question}

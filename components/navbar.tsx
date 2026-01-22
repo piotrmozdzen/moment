@@ -10,7 +10,7 @@ export function Navbar() {
 
     return (
         <nav className="sticky top-0 z-[100] w-full border-b bg-brand-cream font-sans">
-            <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6 relative">
+            <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6 relative text-black">
 
                 {/* Mobile Menu Toggle */}
                 <button
@@ -62,7 +62,7 @@ export function Navbar() {
 
             {/* Mobile Nav */}
             {isOpen && (
-                <div className="md:hidden border-t bg-brand-cream p-4 font-sans">
+                <div className="md:hidden border-t bg-brand-cream p-4 font-sans text-black">
                     <div className="flex flex-col space-y-4 items-center">
                         {siteConfig.navItems.map((item) => (
                             <Link

@@ -64,8 +64,8 @@ export function About() {
             <div className="flex flex-col md:flex-row h-auto md:h-[700px] w-full overflow-hidden">
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-r md:border-r-0">
                     <div className="max-w-xl mx-auto w-full relative z-10">
-                        <h3 className="text-2xl font-bold mb-8 font-montserrat uppercase tracking-wide relative">
-                            WYSOKIEJ JAKOŚCI SKŁADNIKI
+                        <h3 className="text-3xl lg:text-4xl font-semibold mb-8 font-montserrat tracking-tight relative text-black">
+                            Wysokiej jakości składniki
                         </h3>
                         <p className="text-brand-text-light font-normal text-[18px] leading-relaxed font-sans">
                             Wierzymy, że sekret doskonałego koktajlu tkwi w detalach. Pracujemy wyłącznie na alkoholach marek premium oraz świeżych owocach, które kupujemy od sprawdzonych dostawców.
@@ -112,8 +112,8 @@ export function About() {
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-l md:border-l-0">
                     <div className="max-w-xl mx-auto w-full relative z-10">
-                        <h3 className="text-2xl font-bold mb-8 font-montserrat uppercase tracking-wide">
-                            SMAK NIKOGO NIE WYKLUCZA
+                        <h3 className="text-3xl lg:text-4xl font-semibold mb-8 font-montserrat tracking-tight text-black">
+                            Smak nikogo nie wyklucza
                         </h3>
                         <p className="text-brand-text-light font-normal text-[18px] leading-relaxed font-sans">
                             Szanujemy wybory Twoich gości. Niezależnie od tego, czy ktoś jest kierowcą, czy po prostu nie pije alkoholu, zasługuje na coś więcej niż wodę z cytryną.
@@ -148,7 +148,7 @@ export function About() {
             <div className="flex flex-col md:flex-row h-auto md:h-[700px] w-full overflow-hidden border-t border-brand-text/10">
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-r md:border-r-0">
                     <div className="max-w-xl mx-auto w-full relative z-10">
-                        <h3 className="text-2xl font-bold mb-8 font-montserrat uppercase tracking-wide">
+                        <h3 className="text-3xl lg:text-4xl font-semibold mb-8 font-montserrat tracking-tight text-black">
                             Bar to przede wszystkim ludzie
                         </h3>
                         <p className="text-brand-text-light font-normal text-[18px] leading-relaxed font-sans">

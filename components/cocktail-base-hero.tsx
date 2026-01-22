@@ -1,8 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Link from "next/link"; // Added Link
-import { ArrowLeft } from "lucide-react"; // Added ArrowLeft
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 export function CocktailBaseHero() {
     // Single view - displaying all 20 cocktails in a 2-column grid
@@ -43,83 +43,49 @@ export function CocktailBaseHero() {
     ];
 
     return (
-        <div className="relative w-full min-h-screen">
-            {/* 1. TOP IMAGE SECTION */}
-            <div className="relative w-full h-[60vh] md:h-[70vh]">
-                <img
-                    src="/hero-cocktails.jpg"
-                    alt="Signature Cocktails"
-                    className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-black/10"></div>
-            </div>
+        <div className="relative w-full min-h-screen bg-[#FFFFF3] pt-16">
 
-            {/* 2. BEIGE SECTION BELOW */}
-            <div className="relative w-full -mt-20 z-10 text-left">
-                {/* Visual wrapper */}
-                <div className="w-full drop-shadow-2xl">
+            {/* Content Container */}
+            <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-12 lg:px-24">
 
-                    {/* SVG Top Edge */}
-                    <svg
-                        className="block w-full h-[40px]"
-                        preserveAspectRatio="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <defs>
-                            <pattern id="scallop-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                                <path d="M0,0 L10,0 A10,10 0 0,0 30,0 L40,0 L40,40 L0,40 Z" fill="#FFFFF3" />
-                            </pattern>
-                        </defs>
-                        <rect width="100%" height="40" fill="url(#scallop-pattern)" />
-                    </svg>
+                {/* Decorative Background Images */}
+                <div className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+                    <img src="/images/menu-decor-1.png" alt="" className="absolute top-[5%] left-[-5%] md:left-[2%] w-[120px] md:w-[180px] opacity-[0.07] rotate-[-15deg]" />
+                    <img src="/images/menu-decor-2.png" alt="" className="absolute top-[10%] right-[-5%] md:right-[5%] w-[100px] md:w-[150px] opacity-[0.07] rotate-[10deg]" />
+                    <img src="/images/menu-decor-3.png" alt="" className="absolute top-[40%] left-[-2%] md:left-[8%] w-[110px] md:w-[160px] opacity-[0.07] rotate-[5deg]" />
+                    <img src="/images/menu-decor-4.png" alt="" className="absolute top-[60%] right-[-2%] md:right-[10%] w-[100px] md:w-[140px] opacity-[0.07] rotate-[-8deg]" />
+                    <img src="/images/menu-decor-5.png" alt="" className="absolute bottom-[5%] left-[10%] md:left-[20%] w-[80px] md:w-[120px] opacity-[0.07] rotate-[12deg]" />
+                </div>
 
-                    <div className="bg-[#FFFFF3] w-full min-h-[85vh] overflow-hidden pb-16 pt-24 md:pt-32 px-4 md:px-12 lg:px-24">
+                <div className="flex flex-col items-center relative z-10 pb-24">
 
-                        {/* Content Container */}
-                        <div className="relative z-10 w-full max-w-[1400px] mx-auto">
+                    {/* Header - Moved up */}
+                    <h1 className="font-knewave text-[#c16c4d] text-7xl md:text-9xl tracking-wider mb-20 text-center">
+                        MENU
+                    </h1>
 
-                            {/* Return to Home Link */}
-                            <div className="w-full flex justify-start mb-16 pl-4 md:pl-0">
-                                <Link href="/" className="flex items-center gap-2 group inline-block">
-                                    <span className="text-xl group-hover:-translate-x-1 transition-transform duration-300">
-                                        <ArrowLeft size={24} className="text-brand-text" />
-                                    </span>
-                                    <span className="font-bold tracking-widest text-sm uppercase text-brand-text">Wróć do strony głównej</span>
-                                </Link>
+                    {/* Grid Layout */}
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 items-start">
+                        {cocktails.map((item, i) => (
+                            <div key={i} className="flex flex-col w-full text-center items-center">
+                                <h3 className="font-caveat font-bold text-4xl text-[#c16c4d] leading-none mb-3">
+                                    {item.name}
+                                </h3>
+                                <p className="font-caveat text-brand-text-light text-2xl leading-loose max-w-md mx-auto opacity-90">
+                                    {item.ingredients}
+                                </p>
                             </div>
-
-                            <div className="flex flex-col items-center">
-
-                                {/* Header */}
-                                <h1 className="font-knewave text-[#c16c4d] text-8xl md:text-9xl tracking-wider mb-16 text-center">
-                                    MENU
-                                </h1>
-
-                                {/* Grid Layout */}
-                                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-16 items-start">
-                                    {cocktails.map((item, i) => (
-                                        <div key={i} className="flex flex-col w-full text-center items-center">
-                                            <h3 className="font-caveat font-bold text-4xl text-[#c16c4d] leading-none mb-3">
-                                                {item.name}
-                                            </h3>
-                                            <p className="font-caveat text-brand-text-light text-2xl leading-loose max-w-md mx-auto">
-                                                {item.ingredients}
-                                            </p>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {/* Footer Note */}
-                                <div className="mt-16 w-full max-w-2xl mx-auto text-center space-y-6">
-                                    <div className="w-full h-px bg-[#c16c4d]/30"></div>
-                                    <p className="font-caveat text-[#c16c4d] font-bold text-2xl md:text-3xl">
-                                        * Dostępne również w wersji bezalkoholowej
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
+                        ))}
                     </div>
+
+                    {/* Footer Note */}
+                    <div className="mt-24 w-full max-w-2xl mx-auto text-center space-y-8">
+                        <div className="w-full h-px bg-[#c16c4d]/20"></div>
+                        <p className="font-caveat text-[#c16c4d] font-bold text-3xl md:text-4xl">
+                            * Dostępne również w wersji bezalkoholowej
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>

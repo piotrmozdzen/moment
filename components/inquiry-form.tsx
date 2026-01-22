@@ -11,8 +11,8 @@ export function InquiryForm() {
                     {/* Left Side: Content */}
                     <div className="space-y-8">
                         <div className="space-y-2">
-                            <h2 className="text-4xl md:text-5xl font-bold text-brand-cream uppercase tracking-tight font-montserrat leading-[1.1]">
-                                Skontaktuj się <br /> z nami
+                            <h2 className="text-4xl md:text-5xl font-semibold text-brand-cream tracking-tight font-montserrat leading-[1.2]">
+                                Skontaktuj się z nami
                             </h2>
                             <p className="font-caveat text-2xl md:text-3xl text-brand-cream/90">
                                 porozmawiajmy
