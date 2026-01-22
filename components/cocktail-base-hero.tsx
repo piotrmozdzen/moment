@@ -7,106 +7,39 @@ import { ArrowLeft } from "lucide-react"; // Added ArrowLeft
 export function CocktailBaseHero() {
     // Single view - displaying all 20 cocktails in a 2-column grid
     const cocktails = [
-        // 1. Whisky Sour
-        {
-            name: "Whisky Sour",
-            ingredients: "Bourbon, sok z cytryny, syrop cukrowy, białko, angostura"
-        },
-        // 2. Pornstar Martini
-        {
-            name: "Pornstar Martini",
-            ingredients: "Wódka waniliowa, marakuja, syrop waniliowy, limonka, prosecco"
-        },
-        // 3. Negroni
-        {
-            name: "Negroni",
-            ingredients: "Gin, słodki wermut, Campari"
-        },
-        // 4. Aperol Spritz
-        {
-            name: "Aperol Spritz",
-            ingredients: "Aperol, prosecco, woda gazowana, pomarańcza"
-        },
-        // 5. Old Fashioned
-        {
-            name: "Old Fashioned",
-            ingredients: "Bourbon, cukier brązowy, angostura, woda, skórka pomarańczy"
-        },
-        // 6. Margarita
-        {
-            name: "Margarita",
-            ingredients: "Tequila, likier pomarańczowy, sok z limonki, sól"
-        },
-        // 7. Mojito
-        {
-            name: "Mojito",
-            ingredients: "Rum, limonka, mięta, cukier brązowy, woda gazowana"
-        },
-        // 8. Cosmopolitan
-        {
-            name: "Cosmopolitan",
-            ingredients: "Wódka cytrynowa, Cointreau, sok z limonki, sok żurawinowy"
-        },
-        // 9. Daiquiri
-        {
-            name: "Daiquiri",
-            ingredients: "Rum, sok z limonki, syrop cukrowy"
-        },
-        // 10. Espresso Martini
-        {
-            name: "Espresso Martini",
-            ingredients: "Wódka, likier kawowy, espresso, syrop cukrowy"
-        },
-        // 11. Moscow Mule
-        {
-            name: "Moscow Mule",
-            ingredients: "Wódka, piwo imbirowe, sok z limonki, mięta"
-        },
-        // 12. Gin Basil Smash
-        {
-            name: "Gin Basil Smash",
-            ingredients: "Gin, bazylia, cytryna, syrop cukrowy"
-        },
-        // 13. Manhattan
-        {
-            name: "Manhattan",
-            ingredients: "Whisky, słodki wermut, angostura"
-        },
-        // 14. Mai Tai
-        {
-            name: "Mai Tai",
-            ingredients: "Rum jasny i ciemny, likier pomarańczowy, sok z limonki, syrop migdałowy"
-        },
-        // 15. Pina Colada
-        {
-            name: "Pina Colada",
-            ingredients: "Rum, mleczko kokosowe, sok ananasowy"
-        },
-        // 16. Cuba Libre
-        {
-            name: "Cuba Libre",
-            ingredients: "Rum, cola, limonka"
-        },
-        // 17. Tom Collins
-        {
-            name: "Tom Collins",
-            ingredients: "Gin, sok z cytryny, syrop cukrowy, woda gazowana"
-        },
-        // 18. Long Island Iced Tea
-        {
-            name: "Long Island Iced Tea",
-            ingredients: "Wódka, tequila, rum, gin, Cointreau, sok z cytryny, cola"
-        },
-        // 19. Amaretto Sour
-        {
-            name: "Amaretto Sour",
-            ingredients: "Likier Amaretto, sok z cytryny, syrop cukrowy, białko"
-        },
-        // 20. Bloody Mary
-        {
-            name: "Bloody Mary",
-            ingredients: "Wódka, sok pomidorowy, przyprawy, seler naciowy"
-        },
+        // Longest descriptions
+        { name: "Sour", ingredients: "Kwaśno-słodki, limonka, cukier, białko, angustura." },
+        { name: "Pornstar Martini", ingredients: "Egzotyczny, waniliowy, owocowy, limonka, marakuja." },
+
+        { name: "Herbatka Barmana", ingredients: "Herbaciano-ziołowy z limonką, delikatnie cierpki." },
+        { name: "Truskawkowe Love", ingredients: "Słodko-kwaśny, orzeźwiający z musem truskawkowym." },
+
+        { name: "Hugo Spritz", ingredients: "Czarny bez, miętowo-limonkowy, musujący, lekki." },
+        { name: "Garden Spritz", ingredients: "Orzeźwiający, czarny bez i jabłko, musujący." },
+
+        // Medium descriptions
+        { name: "Apertivio Spritz", ingredients: "Orzeźwiający, cytrusowy, lekki z bąbelkami." },
+        { name: "Pina Colada", ingredients: "Słodki, ananasowo-kokosowy, mleczny." },
+
+        { name: "Sex on the Beach", ingredients: "Pomarańczowo-brzoskwiniowy, owocowy, słodki." },
+        { name: "Szarlotka", ingredients: "Słodko-kwaśny, jabłko-cynamon, limonka." },
+
+        { name: "Tom Collins", ingredients: "Cytrusowy, musujący, orzeźwiający." },
+        { name: "Mohito", ingredients: "Kwaśno-orzeźwiający: limonka, cukier, mięta." },
+
+        // Shorter descriptions
+        { name: "Cosmopolitan", ingredients: "Żurawinowy, orzeźwiający, elegancki." },
+        { name: "Negroni", ingredients: "Gorzki, ziołowy, wyrafinowany." },
+
+        { name: "Old Cuban", ingredients: "Elegancki, musujący, miętowy." },
+        { name: "Clover Club", ingredients: "Malinowy, kremowy, elegancki." },
+
+        { name: "Cuba Libre", ingredients: "Słodko-kwaśny: limonka, cola." },
+        { name: "Aloesowy Sour", ingredients: "Kwaśno-słodki, aloes-kiwi." },
+
+        // Shortest
+        { name: "Mango Tango", ingredients: "Słodki, mango-pomarańcza." },
+        { name: "Tiki Paradise", ingredients: "Słodki, ananasowo-morelowy." },
     ];
 
     return (
@@ -180,7 +113,7 @@ export function CocktailBaseHero() {
                                 <div className="mt-16 w-full max-w-2xl mx-auto text-center space-y-6">
                                     <div className="w-full h-px bg-[#c16c4d]/30"></div>
                                     <p className="font-caveat text-[#c16c4d] font-bold text-2xl md:text-3xl">
-                                        * Dostępne również w wersji bezalkoholowej (mocktail)
+                                        * Dostępne również w wersji bezalkoholowej
                                     </p>
                                 </div>
 
