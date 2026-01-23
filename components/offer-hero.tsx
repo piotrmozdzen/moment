@@ -35,14 +35,14 @@ export function OfferHero() {
                         </p>
 
                         <div className="pt-4">
-                            <p className="text-[10px] md:text-xs uppercase tracking-[0.1em] text-brand-text-light font-bold italic leading-relaxed opacity-60">
+                            <p className="text-[10px] md:text-xs uppercase tracking-[0.1em] text-brand-text font-bold italic leading-relaxed">
                                 * Cena ustalana jest indywidualnie na podstawie liczby gości, czasu trwania imprezy oraz wybranego pakietu menu.
                             </p>
                         </div>
                     </div>
 
                     {/* Precisely modeled elliptical button from reference */}
-                    <div className="flex justify-start">
+                    <div className="flex justify-center lg:justify-start">
                         <Link
                             href="/baza-koktajli"
                             className="inline-block border-2 border-[#c16c4d] rounded-[100%] bg-[#FDFDF5] text-[#c16c4d] font-bold lowercase tracking-wider text-sm py-3 px-14 hover:bg-[#c16c4d] hover:text-[#FFFFF3] transition-all duration-300"
@@ -54,7 +54,7 @@ export function OfferHero() {
             </div>
 
             {/* 2. RIGHT SIDE: LIFESTYLE IMAGE */}
-            <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-full bg-black">
+            <div className="hidden lg:block lg:w-1/2 relative min-h-full bg-black">
                 <Image
                     src="/hero-cocktails.jpg"
                     alt="Mobile Bar Lifestyle"
