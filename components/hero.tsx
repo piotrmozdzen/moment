@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
@@ -85,12 +86,6 @@ function Polaroid({
 export function Hero() {
     // SVG animation is handled via CSS group-hover on the button
 
-    const scrollToInquiry = () => {
-        const inquirySection = document.getElementById('inquiry');
-        if (inquirySection) {
-            inquirySection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
 
     const photos = [
         // Top Left - Large (Base Layer)
@@ -170,8 +165,8 @@ export function Hero() {
                     </p>
 
                     <div className="pt-4 pl-1 flex items-center gap-6">
-                        <button
-                            onClick={scrollToInquiry}
+                        <Link
+                            href="/kontakt"
                             className="group relative inline-block cursor-pointer peer"
                         >
                             <span className="relative z-10 font-caveat font-bold text-brand-text text-2xl md:text-3xl px-6 py-2 block">
@@ -192,7 +187,7 @@ export function Hero() {
                                     className="transition-all duration-[800ms] ease-out [stroke-dasharray:700] [stroke-dashoffset:700] group-hover:[stroke-dashoffset:0]"
                                 />
                             </svg>
-                        </button>
+                        </Link>
                         {/* Arrow pointing to button */}
                         <div className="hidden md:block -mt-12 transition-opacity duration-300 peer-hover:opacity-0">
                             <svg

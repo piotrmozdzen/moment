@@ -44,7 +44,7 @@ export function Navbar() {
                 {/* Right: Contact + Icons */}
                 <div className="hidden md:flex items-center gap-6">
                     <Link
-                        href="/contact"
+                        href="/kontakt"
                         className="text-sm font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
                     >
                         KONTAKT
@@ -75,7 +75,7 @@ export function Navbar() {
                             </Link>
                         ))}
                         <Link
-                            href="/contact"
+                            href="/kontakt"
                             className="text-lg font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
                             onClick={() => setIsOpen(false)}
                         >

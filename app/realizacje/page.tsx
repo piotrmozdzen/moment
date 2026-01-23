@@ -1,10 +1,14 @@
-"use client";
-
+import type { Metadata } from 'next';
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Realizacje | Moment Drink Bar",
+    description: "Zobacz zdjęcia z naszych realizacji. Mobilny bar w akcji na weselach i eventach. Galeria naszych koktajli i atmosfery, którą tworzymy.",
+};
 
 export default function RealizacjePage() {
     return (
-        <main className="min-h-screen bg-[#FDFDF5] p-8 md:p-16 lg:p-24 relative overflow-hidden flex flex-col items-center justify-center">
+        <main className="h-[calc(100vh-6rem)] bg-[#FDFDF5] px-8 pt-16 md:p-0 relative overflow-hidden flex flex-col items-center md:justify-center">
 
             {/* Central Content */}
             <div className="max-w-3xl w-full text-center space-y-12">

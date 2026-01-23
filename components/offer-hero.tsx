@@ -9,20 +9,13 @@ export function OfferHero() {
         <section className="w-full lg:h-[calc(100vh-80px)] flex flex-col lg:flex-row items-stretch overflow-hidden bg-[#FDFDF5]">
 
             {/* 1. LEFT SIDE: CONTENT */}
-            <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 lg:py-12 relative bg-[#FDFDF5] text-[#332f2e]">
+            <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-12 relative bg-[#FDFDF5] text-[#332f2e]">
 
                 <div className="relative z-10 w-full max-w-xl mx-auto lg:mx-0 text-left">
-                    <Link href="/" className="flex items-center gap-2 mb-16 group inline-block">
-                        <span className="text-xl group-hover:-translate-x-1 transition-transform duration-300">
-                            <ArrowLeft size={24} className="text-black" />
-                        </span>
-                        <span className="font-bold tracking-widest text-sm uppercase text-black">Wróć do strony głównej</span>
-                    </Link>
-
                     {/* NEW STYLED HEADER (Like Contact page) */}
                     <div className="space-y-4 mb-12">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-black leading-[1.1] font-montserrat tracking-tight">
-                            Oferta barmańska
+                            Wybór koktajli
                         </h1>
                         <p className="font-caveat text-3xl md:text-4xl text-[#c16c4d]">
                             Personalizacja menu

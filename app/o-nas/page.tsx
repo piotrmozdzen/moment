@@ -15,12 +15,6 @@ export default function AboutPage() {
                 {/* Left: Content - 50% width */}
                 <div className="w-full md:w-1/2 p-8 md:p-16 lg:p-24 bg-[#FDFDF5] flex flex-col justify-center">
                     <div className="max-w-xl mx-auto md:mx-0">
-                        <Link href="/" className="flex items-center gap-2 mb-12 group inline-block">
-                            <span className="text-xl group-hover:-translate-x-1 transition-transform duration-300">
-                                <ArrowLeft size={24} className="text-black" />
-                            </span>
-                            <span className="font-bold tracking-widest text-sm uppercase text-black">Wróć do strony głównej</span>
-                        </Link>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat uppercase leading-tight mb-8 text-black">
                             Kim jesteśmy

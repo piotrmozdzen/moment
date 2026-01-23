@@ -9,7 +9,7 @@ export function Process() {
             <div className="h-32 bg-brand-cream w-full" />
 
             {/* Wavy Background Divider */}
-            <div className="relative w-full overflow-hidden leading-[0] transform rotate-180 bg-brand-cream">
+            <div className="hidden md:block relative w-full overflow-hidden leading-[0] transform rotate-180 bg-brand-cream">
                 <svg
                     viewBox="0 0 1200 120"
                     preserveAspectRatio="none"
@@ -23,9 +23,10 @@ export function Process() {
                 <div className="flex flex-col lg:flex-row pb-24">
 
                     {/* Left Column: Label */}
-                    <div className="w-full lg:w-1/4 mb-16 lg:mb-0">
-                        <h2 className="text-lg font-semibold text-brand-cream font-montserrat [writing-mode:vertical-lr] rotate-180">
-                            Jak pracujemy?
+                    {/* Left Column: Label */}
+                    <div className="w-full lg:w-1/4 mb-16 lg:mb-0 flex justify-center lg:block">
+                        <h2 className="text-3xl lg:text-5xl font-semibold text-brand-cream font-montserrat text-center lg:text-left lg:[writing-mode:vertical-lr] lg:rotate-180">
+                            Jak to działa?
                         </h2>
                     </div>
 
@@ -67,21 +68,21 @@ export function Process() {
                         </div>
 
                         {/* Block 2: Right */}
-                        <div className="flex justify-end relative group">
+                        <div className="flex justify-start md:justify-end relative group">
                             <div className="w-full md:w-[75%] z-10">
-                                <div className="group text-right md:text-left">
-                                    <div className="flex items-center justify-end md:justify-start gap-6 mb-6">
-                                        <div className="relative w-14 h-14 flex items-center justify-center shrink-0 order-2 md:order-1">
+                                <div className="group text-left">
+                                    <div className="flex items-center justify-start gap-6 mb-6">
+                                        <div className="relative w-14 h-14 flex items-center justify-center shrink-0">
                                             <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
                                                 <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-brand-cream/30" />
                                             </svg>
                                             <span className="text-lg font-bold font-montserrat text-brand-cream/60">02</span>
                                         </div>
-                                        <h3 className="text-xl font-semibold font-montserrat text-brand-cream order-1 md:order-2">
+                                        <h3 className="text-xl font-semibold font-montserrat text-brand-cream">
                                             Harmonogram
                                         </h3>
                                     </div>
-                                    <div className="flex flex-col items-end md:items-start">
+                                    <div className="flex flex-col items-start">
                                         <p className="text-brand-cream/90 leading-relaxed max-w-lg font-sans">
                                             Montaż <strong>2 godziny wcześniej</strong>. Serwujemy od pierwszego tańca do <strong>01:00</strong>. Chcecie dłużej? Żaden problem.
                                         </p>
@@ -141,23 +142,23 @@ export function Process() {
                         </div>
 
                         {/* Block 4: Right */}
-                        <div className="flex justify-end relative group">
+                        <div className="flex justify-start md:justify-end relative group">
                             <div className="w-full md:w-[75%] z-10">
-                                <div className="group text-right md:text-left">
-                                    <div className="flex items-center justify-end md:justify-start gap-6 mb-6">
-                                        <div className="relative w-14 h-14 flex items-center justify-center shrink-0 order-2 md:order-1">
+                                <div className="group text-left">
+                                    <div className="flex items-center justify-start gap-6 mb-6">
+                                        <div className="relative w-14 h-14 flex items-center justify-center shrink-0">
                                             <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 100 100">
                                                 <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="4" strokeDasharray="240 300" className="text-brand-cream/30" />
                                             </svg>
                                             <span className="text-lg font-bold font-montserrat text-brand-cream/60">04</span>
                                         </div>
-                                        <h3 className="text-xl font-semibold font-montserrat text-brand-cream order-1 md:order-2">
+                                        <h3 className="text-xl font-semibold font-montserrat text-brand-cream">
                                             Chcecie bawić się dłużej?
                                         </h3>
                                     </div>
-                                    <div className="flex flex-col items-end md:items-start">
+                                    <div className="flex flex-col items-start">
                                         <p className="text-brand-cream/90 leading-relaxed max-w-lg italic font-medium">
-                                            Przedłużenie serwisu to koszt zaledwie <strong>1/8 całkowitej ceny</strong> za każdą dodatkową godzinę wspólnej zabawy.
+                                            Przedłużenie serwisu to koszt zaledwie <strong>1/8 całkowitej ceny</strong>
                                         </p>
                                     </div>
                                 </div>

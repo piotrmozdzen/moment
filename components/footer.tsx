@@ -10,34 +10,33 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row justify-between min-h-[250px] text-[16px] text-brand-text-light mb-6">
 
                     {/* Column 1: Polityka */}
-                    <div className="flex flex-col py-2">
-                        <h4 className="font-bold uppercase tracking-[0.2em] mb-6">
+                    <div className="flex flex-col py-6 md:py-2">
+                        <h4 className="font-bold uppercase tracking-[0.2em] mb-4 text-xs md:text-sm">
                             Polityka
                         </h4>
-                        <ul className="space-y-4 font-bold text-brand-text-light">
+                        <ul className="space-y-3 font-medium text-sm md:text-base text-brand-text-light">
                             <li><Link href="/privacy-policy" className="hover:opacity-60 transition-opacity">Polityka prywatności</Link></li>
-                            <li><Link href="/terms" className="hover:opacity-60 transition-opacity">Regulamin</Link></li>
                         </ul>
                     </div>
 
                     {/* Column 2: Linki */}
-                    <div className="flex flex-col py-2">
-                        <h4 className="font-bold uppercase tracking-[0.2em] mb-6">
+                    <div className="flex flex-col py-6 md:py-2">
+                        <h4 className="font-bold uppercase tracking-[0.2em] mb-4 text-xs md:text-sm">
                             Linki
                         </h4>
-                        <ul className="space-y-4 font-bold text-brand-text-light">
-                            <li><Link href="#offer" className="hover:opacity-60 transition-opacity">Oferta</Link></li>
-                            <li><Link href="#cocktails" className="hover:opacity-60 transition-opacity">Baza koktajli</Link></li>
-                            <li><Link href="#portfolio" className="hover:opacity-60 transition-opacity">Realizacje</Link></li>
+                        <ul className="space-y-3 font-medium text-sm md:text-base text-brand-text-light">
+                            <li><Link href="/oferta" className="hover:opacity-60 transition-opacity">Oferta</Link></li>
+                            <li><Link href="/baza-koktajli" className="hover:opacity-60 transition-opacity">Baza koktajli</Link></li>
+                            <li><Link href="/realizacje" className="hover:opacity-60 transition-opacity">Realizacje</Link></li>
                         </ul>
                     </div>
 
                     {/* Column 3: Kontakt */}
-                    <div className="flex flex-col items-start md:items-start w-full md:max-w-xs py-2">
-                        <h4 className="font-bold uppercase tracking-[0.2em] mb-6">
+                    <div className="flex flex-col items-start md:items-start w-full md:max-w-xs py-6 md:py-2">
+                        <h4 className="font-bold uppercase tracking-[0.2em] mb-4 text-xs md:text-sm">
                             Kontakt
                         </h4>
-                        <div className="space-y-4 font-bold text-brand-text-light">
+                        <div className="space-y-3 font-medium text-sm md:text-base text-brand-text-light">
                             <p><a href="mailto:moment.drinkbar@gmail.com" className="hover:opacity-60 transition-opacity">moment.drinkbar@gmail.com</a></p>
                             <p className="leading-relaxed">
                                 Lublin, Polska

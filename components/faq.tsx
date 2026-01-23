@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -56,9 +57,12 @@ export function FAQ() {
                     <p className="text-brand-text-light mb-10 max-w-sm leading-relaxed font-sans font-medium">
                         Przejrzyj nasze najczęstsze pytania – a jeśli nie znajdziesz tego, czego szukasz, po prostu skontaktuj się z nami. Chętnie pomożemy.
                     </p>
-                    <button className="px-8 py-3 border border-brand-text rounded-full text-sm font-bold uppercase tracking-wider text-brand-text hover:bg-brand-text hover:text-white transition-all cursor-pointer font-sans">
+                    <Link
+                        href="/kontakt"
+                        className="px-8 py-3 border border-brand-text rounded-full text-sm font-bold uppercase tracking-wider text-brand-text hover:bg-brand-text hover:text-white transition-all cursor-pointer font-sans inline-block"
+                    >
                         Kontakt
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Right Side: Accordion */}
