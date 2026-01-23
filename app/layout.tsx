@@ -50,9 +50,12 @@ export const metadata: Metadata = {
     creator: "@moment_drinkbar",
   },
   icons: {
-    icon: "/favicon.ico",
-  }
+    icon: '/icon.png',
+    apple: '/icon.png',
+  },
 }
+
+import { Toaster } from 'sonner'
 
 export default function RootLayout({
   children,
@@ -68,6 +71,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   )

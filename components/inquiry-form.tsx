@@ -1,7 +1,40 @@
 "use client";
 
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { contactFormSchema, ContactFormInputs } from "@/lib/schemas";
+import { sendEmail } from "@/actions/send-email";
+import { toast } from "sonner";
+import { useState } from "react";
 
 export function InquiryForm() {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors },
+    } = useForm<ContactFormInputs>({
+        resolver: zodResolver(contactFormSchema),
+    });
+
+    async function onSubmit(data: ContactFormInputs) {
+        setIsSubmitting(true);
+        try {
+            const result = await sendEmail(data);
+            if (result.success) {
+                toast.success("Wiadomość została wysłana!");
+                reset();
+            } else {
+                toast.error(result.error || "Coś poszło nie tak.");
+            }
+        } catch (error) {
+            toast.error("Błąd połączenia z serwerem.");
+        } finally {
+            setIsSubmitting(false);
+        }
+    }
 
     return (
         <section id="inquiry" className="bg-[#c16c4d] py-24 md:py-32 border-b border-slate-900/10 px-8">
@@ -31,7 +64,7 @@ export function InquiryForm() {
 
                     {/* Right Side: Form */}
                     <div className="flex flex-col space-y-8">
-                        <form className="space-y-6">
+                        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                             {/* Email */}
                             <div className="border-b border-brand-cream/40 pb-2">
                                 <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
@@ -39,9 +72,11 @@ export function InquiryForm() {
                                 </label>
                                 <input
                                     type="email"
+                                    {...register("email")}
                                     className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
                                     placeholder="Email"
                                 />
+                                {errors.email && <p className="text-[10px] text-white mt-1">{errors.email.message}</p>}
                             </div>
 
                             {/* Name Row */}
@@ -52,9 +87,11 @@ export function InquiryForm() {
                                     </label>
                                     <input
                                         type="text"
+                                        {...register("firstName")}
                                         className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
                                         placeholder="Imię"
                                     />
+                                    {errors.firstName && <p className="text-[10px] text-white mt-1">{errors.firstName.message}</p>}
                                 </div>
                                 <div className="border-b border-brand-cream/40 pb-2">
                                     <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
@@ -62,9 +99,11 @@ export function InquiryForm() {
                                     </label>
                                     <input
                                         type="text"
+                                        {...register("lastName")}
                                         className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
                                         placeholder="Nazwisko"
                                     />
+                                    {errors.lastName && <p className="text-[10px] text-white mt-1">{errors.lastName.message}</p>}
                                 </div>
                             </div>
 
@@ -76,9 +115,11 @@ export function InquiryForm() {
                                     </label>
                                     <input
                                         type="text"
+                                        {...register("city")}
                                         className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
                                         placeholder="Miasto"
                                     />
+                                    {errors.city && <p className="text-[10px] text-white mt-1">{errors.city.message}</p>}
                                 </div>
                                 <div className="border-b border-brand-cream/40 pb-2">
                                     <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
@@ -86,9 +127,11 @@ export function InquiryForm() {
                                     </label>
                                     <input
                                         type="tel"
+                                        {...register("phone")}
                                         className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
                                         placeholder="Telefon"
                                     />
+                                    {errors.phone && <p className="text-[10px] text-white mt-1">{errors.phone.message}</p>}
                                 </div>
                             </div>
 
@@ -99,22 +142,21 @@ export function InquiryForm() {
                                 </label>
                                 <textarea
                                     rows={4}
+                                    {...register("message")}
                                     className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40 resize-none"
                                     placeholder="Wiadomość"
                                 />
+                                {errors.message && <p className="text-[10px] text-white mt-1">{errors.message.message}</p>}
                             </div>
-
-
-
-
 
                             {/* Submit Button */}
                             <div className="pt-8">
                                 <button
                                     type="submit"
-                                    className="bg-brand-cream text-brand-blue font-bold uppercase tracking-widest text-xs py-4 px-10 rounded-full hover:bg-white transition-all hover:scale-105 active:scale-95 font-montserrat"
+                                    disabled={isSubmitting}
+                                    className="bg-brand-cream text-brand-blue font-bold uppercase tracking-widest text-xs py-4 px-10 rounded-full hover:bg-white transition-all hover:scale-105 active:scale-95 font-montserrat disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
-                                    Wyślij
+                                    {isSubmitting ? "Wysyłanie..." : "Wyślij"}
                                 </button>
                             </div>
                         </form>
