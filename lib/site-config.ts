@@ -4,7 +4,7 @@ export const siteConfig = {
     url: "https://moment-drinkbar.pl",
     ogImage: "https://moment-drinkbar.pl/og.jpg",
     links: {
-        instagram: "https://instagram.com/moment_drinkbar",
+        instagram: "https://www.instagram.com/moment.drinkbar",
         facebook: "https://facebook.com/moment.drinkbar",
     },
     navItems: [
