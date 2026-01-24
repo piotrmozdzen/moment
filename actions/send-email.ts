@@ -17,7 +17,7 @@ export async function sendEmail(data: ContactFormInputs) {
     try {
         const { data: emailData, error } = await resend.emails.send({
             from: "Moment Drink Bar <kontakt@moment-drinkbar.pl>",
-            to: ["piotr.mozdzen@protonmail.com"],
+            to: ["moment.drinkbar@gmail.com"],
             subject: `Moment - Nowa wiadomość od: ${firstName} ${lastName}`,
             replyTo: email,
             html: `
