@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
                         <h2 className="text-xl md:text-2xl font-bold text-brand-text">2. Administrator danych</h2>
                         <p>
                             Administratorem danych osobowych jest właściciel marki <strong>Moment Drink Bar</strong>.
-                            Wsparcie w zakresie ochrony danych można uzyskać kontaktując się pod adresem e-mail: <a href="mailto:moment.drinkbar@gmail.com" className="font-bold underline hover:opacity-70">moment.drinkbar@gmail.com</a>.
+                            Wsparcie w zakresie ochrony danych można uzyskać kontaktując się pod adresem e-mail: <a href="mailto:moment.drinkbar@gmail.com" className="font-bold hover:opacity-70">moment.drinkbar@gmail.com</a>.
                         </p>
                     </div>
 
@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
                     <div className="space-y-4">
                         <h2 className="text-xl md:text-2xl font-bold text-brand-text">7. Kontakt</h2>
                         <p>
-                            W razie jakichkolwiek pytań dotyczących ochrony prywatności, prosimy o kontakt mailowy na adres: <a href="mailto:moment.drinkbar@gmail.com" className="font-bold underline hover:opacity-70">moment.drinkbar@gmail.com</a>.
+                            W razie jakichkolwiek pytań dotyczących ochrony prywatności, prosimy o kontakt mailowy na adres: <a href="mailto:moment.drinkbar@gmail.com" className="font-bold hover:opacity-70">moment.drinkbar@gmail.com</a>.
                         </p>
                     </div>
 
