@@ -67,14 +67,14 @@ export function ContactPageForm() {
                             Skontaktuj się z nami przez formularz albo bezpośrednio pod adresem:{' '}
                             <a
                                 href="mailto:moment.drinkbar@gmail.com"
-                                className="text-brand-cream font-bold hover:underline transition-all block mb-2"
+                                className="text-brand-cream font-bold transition-all block mb-2"
                             >
                                 moment.drinkbar@gmail.com
                             </a>
                             lub telefonicznie:{' '}
                             <a
                                 href="tel:+48797812612"
-                                className="text-brand-cream font-bold hover:underline transition-all block"
+                                className="text-brand-cream font-bold transition-all block"
                             >
                                 +48 797 812 612
                             </a>

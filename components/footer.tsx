@@ -15,7 +15,7 @@ export function Footer() {
                             Polityka
                         </h4>
                         <ul className="space-y-3 font-medium text-sm md:text-base text-brand-text-light">
-                            <li><Link href="/privacy-policy" className="hover:opacity-60 transition-opacity">Polityka prywatności</Link></li>
+                            <li><Link href="/privacy-policy" className="hover:opacity-60 transition-opacity no-underline">Polityka prywatności</Link></li>
                         </ul>
                     </div>
 
@@ -25,9 +25,9 @@ export function Footer() {
                             Linki
                         </h4>
                         <ul className="space-y-3 font-medium text-sm md:text-base text-brand-text-light">
-                            <li><Link href="/oferta" className="hover:opacity-60 transition-opacity">Oferta</Link></li>
-                            <li><Link href="/baza-koktajli" className="hover:opacity-60 transition-opacity">Baza koktajli</Link></li>
-                            <li><Link href="/realizacje" className="hover:opacity-60 transition-opacity">Realizacje</Link></li>
+                            <li><Link href="/oferta" className="hover:opacity-60 transition-opacity no-underline">Oferta</Link></li>
+                            <li><Link href="/baza-koktajli" className="hover:opacity-60 transition-opacity no-underline">Baza koktajli</Link></li>
+                            <li><Link href="/realizacje" className="hover:opacity-60 transition-opacity no-underline">Realizacje</Link></li>
                         </ul>
                     </div>
 
@@ -37,11 +37,11 @@ export function Footer() {
                             Kontakt
                         </h4>
                         <div className="space-y-3 font-medium text-sm md:text-base text-brand-text-light">
-                            <p><a href="mailto:moment.drinkbar@gmail.com" className="hover:opacity-60 transition-opacity">moment.drinkbar@gmail.com</a></p>
+                            <p><a href="mailto:moment.drinkbar@gmail.com" className="hover:opacity-60 transition-opacity no-underline">moment.drinkbar@gmail.com</a></p>
                             <p className="leading-relaxed">
                                 Lublin, Polska
                             </p>
-                            <p><a href="tel:+48797812612" className="hover:opacity-60 transition-opacity">+48 797 812 612</a></p>
+                            <p><a href="tel:+48797812612" className="hover:opacity-60 transition-opacity no-underline">+48 797 812 612</a></p>
                         </div>
 
                         <div className="flex gap-4 pt-8">
