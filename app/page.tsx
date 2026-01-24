@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Moment Drink Bar | Mobilny Bar na Wesele",
-  description: "Profesjonalny mobilny drink bar na Twoje wesele i imprezę. Autorskie koktajle, doświadczeni barmani i niezapomniana atmosfera.",
+  title: "Mobilny Bar na Wesele Lublin | Drink Bar na Imprezę",
+  description: "Szukasz drink baru na wesele? Moment Drink Bar z Lublina oferuje profesjonalną obsługę barmańską, autorskie koktajle i niezapomnianą atmosferę w całej Polsce.",
 };
 
 export default function Home() {

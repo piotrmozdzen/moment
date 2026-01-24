@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Realizacje | Moment Drink Bar",
-    description: "Zobacz zdjęcia z naszych realizacji. Mobilny bar w akcji na weselach i eventach. Galeria naszych koktajli i atmosfery, którą tworzymy.",
+    title: "Galeria i Realizacje - Barmani w Akcji",
+    description: "Zobacz jak pracujemy! Galeria zdjęć z naszych realizacji na weselach i imprezach. Poczuj atmosferę i zobacz nasze wyśmienite koktajle.",
 };
 
 export default function RealizacjePage() {

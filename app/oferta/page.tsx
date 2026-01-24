@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { OfferHero } from "@/components/offer-hero";
 
 export const metadata: Metadata = {
-    title: "Oferta | Moment Drink Bar",
-    description: "Sprawdź naszą ofertę mobilnego drink baru. Pakiety weselne, imprezy firmowe i okolicznościowe. Indywidualne podejście i profesjonalna obsługa.",
+    title: "Oferta i Pakiety Weselne - Drink Bar",
+    description: "Kompleksowa oferta mobilnego baru. Pakiety dostosowane do liczby gości, autorska karta menu i profesjonalny sprzęt. Sprawdź naszą ofertę na wesele.",
 };
 
 

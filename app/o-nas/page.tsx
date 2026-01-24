@@ -4,8 +4,8 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "O Nas | Moment Drink Bar",
-    description: "Poznaj filozofię Moment Drink Bar. Tworzymy autorskie koktajle z pasją i uśmiechem, obsługując wesela i imprezy okolicznościowe.",
+    title: "Kim Jesteśmy - Nasza Pasja do Miksologii",
+    description: "Poznaj barmanów z Moment Drink Bar. Nasza historia zaczęła się w Lublinie, a dziś tworzymy wyjątkowe koktajle na wesela i eventy w całej Polsce.",
 };
 
 export default function AboutPage() {

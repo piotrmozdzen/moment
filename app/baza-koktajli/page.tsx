@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import { CocktailBaseHero } from "@/components/cocktail-base-hero";
 
 export const metadata: Metadata = {
-    title: "Baza Koktajli | Moment Drink Bar",
-    description: "Poznaj nasze menu koktajlowe. Klasyki, autorskie kompozycje i orzeźwiające mocktaile. Wybierz idealne drinki na Twoją imprezę.",
+    title: "Menu Koktajli - Klasyki i Autorskie Drinki",
+    description: "Zobacz naszą bazę koktajli. Od orzeźwiających klasyków po nasze autorskie kompozycje i pyszne mocktaile. Skomponuj menu na swoją imprezę.",
 };
 
 export default function CocktailBasePage() {
