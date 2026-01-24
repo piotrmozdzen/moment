@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/baza-koktajli',
         '/realizacje',
         '/kontakt',
-        '/privacy-policy',
     ].map((route) => ({
         url: `${siteConfig.url}${route}`,
         lastModified: new Date(),

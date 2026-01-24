@@ -26,7 +26,7 @@ export function Navbar() {
                         <Link
                             key={item.href}
                             href={item.href}
-                            className="text-sm font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
+                            className="text-sm font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase no-underline"
                         >
                             {item.label}
                         </Link>
@@ -45,7 +45,7 @@ export function Navbar() {
                 <div className="hidden md:flex items-center gap-6">
                     <Link
                         href="/kontakt"
-                        className="text-sm font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
+                        className="text-sm font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase no-underline"
                     >
                         KONTAKT
                     </Link>
@@ -68,7 +68,7 @@ export function Navbar() {
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className="text-lg font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
+                                className="text-lg font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase no-underline"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}
@@ -76,7 +76,7 @@ export function Navbar() {
                         ))}
                         <Link
                             href="/kontakt"
-                            className="text-lg font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase"
+                            className="text-lg font-bold tracking-widest text-brand-text hover:text-brand-text-light uppercase no-underline"
                             onClick={() => setIsOpen(false)}
                         >
                             KONTAKT
