@@ -92,7 +92,7 @@ export function About() {
                 <div className="w-full md:w-1/2 relative h-[400px] md:h-full">
                     <Image
                         src="/images/IMG1.png"
-                        alt="Wysokiej jakości składniki - koktajl z malinami"
+                        alt="Wysokiej jakości składniki drink baru - świeże maliny i owoce"
                         fill
                         className="object-cover"
                         priority
@@ -105,7 +105,7 @@ export function About() {
                 <div className="w-full md:w-1/2 relative h-[400px] md:h-full">
                     <Image
                         src="/images/IMG2.png"
-                        alt="Smak nikogo nie wyklucza - bezalkoholowe drinki"
+                        alt="Orzeźwiajace drinki bezalkoholowe (mocktaile) na wesele i imprezę"
                         fill
                         className="object-cover"
                     />
@@ -179,7 +179,7 @@ export function About() {
                 <div className="w-full md:w-1/2 relative h-[400px] md:h-full">
                     <Image
                         src="/images/IMG3.png"
-                        alt="Bar to przede wszystkim ludzie - barmani"
+                        alt="Uśmiechnięty zespół barmanów Moment Drink Bar przy pracy"
                         fill
                         className="object-cover"
                     />

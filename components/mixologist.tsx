@@ -11,7 +11,7 @@ export function Mixologist() {
                 <div className="w-full md:w-1/2 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
                     <Image
                         src="/images/lou.jpg"
-                        alt="Ekspert Miksologii Filip"
+                        alt="Filip - doświadczony barman i ekspert miksologii w Moment Drink Bar"
                         fill
                         className="object-cover"
                     />
@@ -35,13 +35,13 @@ export function Mixologist() {
                     {/* Ingredients Icons */}
                     <div className="flex items-center gap-6">
                         <div className="relative w-12 h-12">
-                            <Image src="/blueberry.png" alt="Blueberry" fill className="object-contain" />
+                            <Image src="/blueberry.png" alt="Świeża borówka do koktajli" fill className="object-contain" />
                         </div>
                         <div className="relative w-12 h-12">
-                            <Image src="/cirtus.png" alt="Lemon" fill className="object-contain" />
+                            <Image src="/cirtus.png" alt="Plaster cytryny do drinków" fill className="object-contain" />
                         </div>
                         <div className="relative w-12 h-12">
-                            <Image src="/strawberry.png" alt="Strawberry" fill className="object-contain" />
+                            <Image src="/strawberry.png" alt="Soczysta truskawka jako dodatek do baru" fill className="object-contain" />
                         </div>
                     </div>
 

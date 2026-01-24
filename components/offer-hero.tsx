@@ -53,7 +53,7 @@ export function OfferHero() {
                 <div className="w-full md:w-1/2 relative min-h-[500px] md:min-h-screen bg-black">
                     <Image
                         src="/hero-cocktails.jpg"
-                        alt="Mobile Bar Lifestyle"
+                        alt="Mobilny bar z kolorowymi koktajlami na wesele - Moment Drink Bar"
                         fill
                         className="object-cover"
                         priority

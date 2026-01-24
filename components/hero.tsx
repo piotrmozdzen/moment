@@ -91,7 +91,7 @@ export function Hero() {
         // Top Left - Large (Base Layer)
         {
             src: "/images/hero-barman.jpg",
-            alt: "Nasi barmani",
+            alt: "Profesjonalni barmani Moment Drink Bar obsługujący imprezę",
             caption: "Imprezy okolicznościowe",
             rotation: "rotate-[-2deg]",
             className: "top-[8%] left-[3%] w-44 md:w-56 lg:w-[260px]",
@@ -101,7 +101,7 @@ export function Hero() {
         // Top Right - Med (Elevated, Slight Overlap)
         {
             src: "/images/hero-wesela.png",
-            alt: "Wesela",
+            alt: "Stylowy drink bar na weselu - radosna atmosfera",
             caption: "Wesela",
             rotation: "rotate-[6deg]",
             className: "top-[5%] right-[2%] w-44 md:w-56 lg:w-[260px]",
@@ -111,7 +111,7 @@ export function Hero() {
         // Mid Left - Med (Overlaps Top Left)
         {
             src: "/images/moment-polaroid.jpg",
-            alt: "Moment Drink Bar",
+            alt: "Logo Moment Drink Bar na zdjęciu typu polaroid",
             caption: "Sprawdź ofertę",
             rotation: "rotate-[-5deg]",
             className: "top-[48%] left-[8%] w-44 md:w-56 lg:w-[260px]",
@@ -121,7 +121,7 @@ export function Hero() {
         // Mid Right - Med (Between Top and Bottom Right)
         {
             src: "/images/mocktaile-2.jpg",
-            alt: "Mocktaile",
+            alt: "Kolorowe i orzeźwiające mocktaile (drinki bezalkoholowe) na wesele",
             caption: "Mocktaile",
             rotation: "rotate-[4deg]",
             className: "top-[48%] right-[0%] w-48 md:w-60 lg:w-[280px]",
@@ -131,7 +131,7 @@ export function Hero() {
         // Center - Small (Bridges the composition)
         {
             src: "/images/autorskie-drinki.jpg",
-            alt: "Autorskie drinki",
+            alt: "Unikalne autorskie koktajle serwowane przez nasz mobilny bar",
             caption: "Autorskie drinki",
             rotation: "rotate-[-3deg]",
             className: "top-[28%] left-[38%] w-40 md:w-52 lg:w-[240px]",
