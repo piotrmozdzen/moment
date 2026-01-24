@@ -64,12 +64,19 @@ export function ContactPageForm() {
                             Masz pytania?
                         </h1>
                         <p className="text-brand-cream/90 mb-10 max-w-sm leading-relaxed font-sans font-medium">
-                            Skontaktuj się z nami przez formularz albo bezpośrednio na adres:{' '}
+                            Skontaktuj się z nami przez formularz albo bezpośrednio pod adresem:{' '}
                             <a
                                 href="mailto:moment.drinkbar@gmail.com"
-                                className="text-brand-cream font-bold hover:underline transition-all underline"
+                                className="text-brand-cream font-bold hover:underline transition-all block mb-2"
                             >
                                 moment.drinkbar@gmail.com
+                            </a>
+                            lub telefonicznie:{' '}
+                            <a
+                                href="tel:+48797812612"
+                                className="text-brand-cream font-bold hover:underline transition-all block"
+                            >
+                                +48 797 812 612
                             </a>
                         </p>
                     </div>

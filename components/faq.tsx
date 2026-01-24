@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 
 const faqItems = [
     {
@@ -37,6 +38,20 @@ export function FAQ() {
 
     return (
         <section className="bg-brand-cream py-24 px-8 relative">
+            <Script id="faq-schema" type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": faqItems.map(item => ({
+                        "@type": "Question",
+                        "name": item.question,
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": item.answer
+                        }
+                    }))
+                })}
+            </Script>
             {/* Wavy Separator */}
             <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
                 <svg className="relative block w-full h-[40px]" viewBox="0 0 1421 39" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">

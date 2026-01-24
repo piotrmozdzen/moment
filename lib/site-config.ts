@@ -15,7 +15,7 @@ export const siteConfig = {
     ],
     contact: {
         email: "moment.drinkbar@gmail.com",
-        phone: "+48 123 456 789",
+        phone: "+48 797 812 612",
         address: "Polska",
     }
 };
