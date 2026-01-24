@@ -74,6 +74,34 @@ export default function RootLayout({
           })(window,document,'script','dataLayer','GTM-PSL6DF8G');
         `}
       </Script>
+      <Script id="json-ld" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": siteConfig.name,
+          "description": siteConfig.description,
+          "url": siteConfig.url,
+          "telephone": siteConfig.contact.phone,
+          "email": siteConfig.contact.email,
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lublin",
+            "addressRegion": "Lubelskie",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 51.2465,
+            "longitude": 22.5684
+          },
+          "sameAs": [
+            siteConfig.links.facebook,
+            siteConfig.links.instagram
+          ],
+          "image": `${siteConfig.url}/og.jpg`,
+          "priceRange": "$$"
+        })}
+      </Script>
       <body className={cn("min-h-screen bg-background font-sans antialiased", montserrat.variable, caveat.variable, knewave.variable)}>
         <noscript>
           <iframe
