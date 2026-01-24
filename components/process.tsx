@@ -5,8 +5,8 @@
 export function Process() {
     return (
         <section className="relative bg-brand-blue overflow-hidden">
-            {/* Beige Spacer above the wave */}
-            <div className="h-32 bg-brand-cream w-full" />
+            {/* Beige Spacer above the wave - Removed on mobile */}
+            <div className="h-0 md:h-32 bg-brand-cream w-full" />
 
             {/* Wavy Background Divider */}
             <div className="hidden md:block relative w-full overflow-hidden leading-[0] transform rotate-180 bg-brand-cream">
@@ -19,12 +19,12 @@ export function Process() {
                 </svg>
             </div>
 
-            <div className="max-w-7xl mx-auto px-8 py-24 relative z-10">
-                <div className="flex flex-col lg:flex-row pb-24">
+            <div className="max-w-7xl mx-auto px-8 py-12 md:py-24 relative z-10">
+                <div className="flex flex-col lg:flex-row pb-12 md:pb-24">
 
                     {/* Left Column: Label */}
                     {/* Left Column: Label */}
-                    <div className="w-full lg:w-1/4 mb-16 lg:mb-0 flex justify-center lg:block">
+                    <div className="w-full lg:w-1/4 mb-12 md:mb-16 lg:mb-0 flex justify-center lg:block">
                         <h2 className="text-3xl lg:text-5xl font-semibold text-brand-cream font-montserrat text-center lg:text-left lg:[writing-mode:vertical-lr] lg:rotate-180">
                             Jak to działa?
                         </h2>
@@ -54,7 +54,7 @@ export function Process() {
                         </div>
 
                         {/* Marker Path 1 -> 2: Shifted slightly Left */}
-                        <div className="relative h-48 w-full flex justify-center md:justify-start md:pl-20">
+                        <div className="relative h-12 md:h-48 w-full flex justify-center md:justify-start md:pl-20">
                             <div className="w-64 h-full hidden md:block pointer-events-none opacity-30">
                                 <svg className="w-full h-full overflow-visible" viewBox="0 0 200 100" fill="none">
                                     <path
@@ -92,7 +92,7 @@ export function Process() {
                         </div>
 
                         {/* Marker Path 2 -> 3: Centered (Git) */}
-                        <div className="relative h-48 w-full flex justify-center">
+                        <div className="relative h-12 md:h-48 w-full flex justify-center">
                             <div className="w-64 h-full hidden md:block pointer-events-none opacity-30">
                                 <svg className="w-full h-full overflow-visible" viewBox="0 0 200 100" fill="none">
                                     <path
@@ -128,7 +128,7 @@ export function Process() {
                         </div>
 
                         {/* Marker Path 3 -> 4: Shifted slightly Left */}
-                        <div className="relative h-48 w-full flex justify-center md:justify-start md:pl-32">
+                        <div className="relative h-12 md:h-48 w-full flex justify-center md:justify-start md:pl-32">
                             <div className="w-64 h-full hidden md:block pointer-events-none opacity-30">
                                 <svg className="w-full h-full overflow-visible" viewBox="0 0 200 100" fill="none">
                                     <path

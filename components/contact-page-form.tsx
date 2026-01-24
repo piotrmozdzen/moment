@@ -40,11 +40,11 @@ export function ContactPageForm() {
     return (
         <main className="bg-[#c16c4d] relative overflow-x-hidden min-h-screen">
 
-            {/* Top Spacer to extend beige background under navbar */}
-            <div className="h-16 md:h-24 bg-brand-cream w-full"></div>
+            {/* Top Spacer to extend beige background under navbar (Hidden on Mobile) */}
+            <div className="hidden md:block h-16 md:h-24 bg-brand-cream w-full"></div>
 
-            {/* Organic Wave Divider - Transition to Blue */}
-            <div className="relative w-full leading-[0] transform rotate-180 bg-brand-cream">
+            {/* Organic Wave Divider - Transition to Blue (Hidden on Mobile) */}
+            <div className="hidden md:block relative w-full leading-[0] transform rotate-180 bg-brand-cream">
                 <svg
                     viewBox="0 0 1200 120"
                     preserveAspectRatio="none"

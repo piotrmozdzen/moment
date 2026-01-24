@@ -34,13 +34,13 @@ export function Mixologist() {
 
                     {/* Ingredients Icons */}
                     <div className="flex items-center gap-6">
-                        <div className="relative w-16 h-16">
+                        <div className="relative w-12 h-12">
                             <Image src="/blueberry.png" alt="Blueberry" fill className="object-contain" />
                         </div>
-                        <div className="relative w-16 h-16">
+                        <div className="relative w-12 h-12">
                             <Image src="/cirtus.png" alt="Lemon" fill className="object-contain" />
                         </div>
-                        <div className="relative w-16 h-16">
+                        <div className="relative w-12 h-12">
                             <Image src="/strawberry.png" alt="Strawberry" fill className="object-contain" />
                         </div>
                     </div>

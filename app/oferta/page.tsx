@@ -9,8 +9,6 @@ export const metadata: Metadata = {
 
 export default function OfferPage() {
     return (
-        <main className="overflow-x-hidden">
-            <OfferHero />
-        </main>
+        <OfferHero />
     );
 }

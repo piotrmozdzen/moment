@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
     return (
-        <section className="min-h-screen bg-[#FDFDF5]">
-            <div className="flex flex-col md:flex-row min-h-screen w-full">
+        <section className="min-h-0 md:min-h-screen bg-[#FDFDF5]">
+            <div className="flex flex-col md:flex-row min-h-0 md:min-h-screen w-full">
                 {/* Left: Content - 50% width */}
-                <div className="w-full md:w-1/2 p-8 md:p-16 lg:p-24 bg-[#FDFDF5] flex flex-col justify-center">
+                <div className="w-full md:w-1/2 p-8 md:p-16 lg:p-24 pt-8 md:pt-[10vh] lg:pt-[10vh] flex flex-col justify-start bg-[#FDFDF5]">
                     <div className="max-w-xl mx-auto md:mx-0">
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat uppercase leading-tight mb-8 text-black">
