@@ -14,7 +14,7 @@ export const siteConfig = {
         { label: "REALIZACJE", href: "/realizacje" },
     ],
     contact: {
-        email: "kontakt@moment-drinkbar.pl",
+        email: "moment.drinkbar@gmail.com",
         phone: "+48 123 456 789",
         address: "Polska",
     }
