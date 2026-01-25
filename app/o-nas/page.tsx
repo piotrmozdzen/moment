@@ -48,11 +48,11 @@ export default function AboutPage() {
                 <div className="w-full md:w-1/2 relative min-h-[500px] md:min-h-screen">
                     <Image
                         src="/images/bartender-about-2.jpg"
-                        alt="Profesjonalny barman w Lublinie przygotowujący autorski koktajl"
+                        alt="Doświadczony barman z Lublina przygotowujący autorski drink na imprezę okolicznościową"
                         fill
                         className="object-cover"
                         priority
-                        quality={100}
+                        quality={90}
                         sizes="(max-width: 768px) 100vw, 50vw"
                     />
                 </div>

@@ -11,9 +11,11 @@ export function Mixologist() {
                 <div className="w-full md:w-1/2 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
                     <Image
                         src="/images/lou.jpg"
-                        alt="Filip - doświadczony barman i ekspert miksologii w Moment Drink Bar"
+                        alt="Filip - główny miksolog Moment Drink Bar Lublin, ekspert od drinków weselnych i eventowych"
                         fill
                         className="object-cover"
+                        quality={90}
+                        sizes="(max-width: 768px) 100vw, 50vw"
                     />
                 </div>
 
@@ -25,7 +27,7 @@ export function Mixologist() {
 
                     <div className="space-y-6 text-brand-text-light leading-relaxed mb-12">
                         <p>
-                            Nasze koktajle powstają w oparciu o pasję i doświadczenie. Każda receptura to wynik współpracy z Filipem, który dba o to, by napoje były przygotowane zgodnie ze sztuką barmańską.
+                            Nasze koktajle powstają w oparciu o pasję i doświadczenie. Każda receptura to wynik pracy z Filipa, który dba o to, by napoje były przygotowane zgodnie ze sztuką barmańską.
                         </p>
                         <p>
                             Praktyczne doświadczenie pozwala nam tworzyć kompozycje o zbalansowanym smaku, które są idealnym uzupełnieniem każdej wyjątkowej chwili.

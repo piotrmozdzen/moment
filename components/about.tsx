@@ -92,10 +92,12 @@ export function About() {
                 <div className="w-full md:w-1/2 relative h-[400px] md:h-full">
                     <Image
                         src="/images/IMG1.png"
-                        alt="Wysokiej jakości składniki drink baru - świeże maliny i owoce"
+                        alt="Świeże owoce i jakościowe półprodukty używane przez barmanów Moment Drink Bar do przygotowania drinków"
                         fill
                         className="object-cover"
                         priority
+                        quality={90}
+                        sizes="(max-width: 768px) 100vw, 50vw"
                     />
                 </div>
             </div>
@@ -105,9 +107,11 @@ export function About() {
                 <div className="w-full md:w-1/2 relative h-[400px] md:h-full">
                     <Image
                         src="/images/IMG2.png"
-                        alt="Orzeźwiajace drinki bezalkoholowe (mocktaile) na wesele i imprezę"
+                        alt="Profesjonalnie podane mocktaile bezalkoholowe - alternatywa na wesele dla kierowców i niepijących"
                         fill
                         className="object-cover"
+                        quality={90}
+                        sizes="(max-width: 768px) 100vw, 50vw"
                     />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16 lg:px-32 relative bg-brand-cream border-l md:border-l-0">
@@ -179,9 +183,11 @@ export function About() {
                 <div className="w-full md:w-1/2 relative h-[400px] md:h-full">
                     <Image
                         src="/images/IMG3.png"
-                        alt="Uśmiechnięty zespół barmanów Moment Drink Bar przy pracy"
+                        alt="Uśmiechnięty zespół profesjonalnych barmanów obsługujących wesele - Moment Drink Bar"
                         fill
                         className="object-cover"
+                        quality={90}
+                        sizes="(max-width: 768px) 100vw, 50vw"
                     />
                 </div>
             </div>

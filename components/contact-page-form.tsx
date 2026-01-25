@@ -56,7 +56,7 @@ export function ContactPageForm() {
 
             {/* Content Section with Blue Background */}
             <div className="bg-[#c16c4d] pb-24 px-8 pt-8 md:pt-12">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 md:gap-24">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 md:gap-16">
 
                     {/* Left Side: Title & Contact Info */}
                     <div className="md:w-[40%]">

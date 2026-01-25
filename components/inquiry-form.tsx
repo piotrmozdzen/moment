@@ -66,14 +66,14 @@ export function InquiryForm() {
                     <div className="flex flex-col space-y-8">
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                             {/* Email */}
-                            <div className="border-b border-brand-cream/40 pb-2">
-                                <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
+                            <div className="border-b border-brand-cream pb-2">
+                                <label className="block text-xs font-bold uppercase tracking-wider text-brand-cream mb-1">
                                     E-mail*
                                 </label>
                                 <input
                                     type="email"
                                     {...register("email")}
-                                    className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
+                                    className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/30 placeholder:text-[10px]"
                                     placeholder="Email"
                                 />
                                 {errors.email && <p className="text-[10px] text-white mt-1">{errors.email.message}</p>}
@@ -81,26 +81,26 @@ export function InquiryForm() {
 
                             {/* Name Row */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="border-b border-brand-cream/40 pb-2">
-                                    <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
+                                <div className="border-b border-brand-cream pb-2">
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-brand-cream mb-1">
                                         Imię*
                                     </label>
                                     <input
                                         type="text"
                                         {...register("firstName")}
-                                        className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
+                                        className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/30 placeholder:text-[10px]"
                                         placeholder="Imię"
                                     />
                                     {errors.firstName && <p className="text-[10px] text-white mt-1">{errors.firstName.message}</p>}
                                 </div>
-                                <div className="border-b border-brand-cream/40 pb-2">
-                                    <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
+                                <div className="border-b border-brand-cream pb-2">
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-brand-cream mb-1">
                                         Nazwisko*
                                     </label>
                                     <input
                                         type="text"
                                         {...register("lastName")}
-                                        className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
+                                        className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/30 placeholder:text-[10px]"
                                         placeholder="Nazwisko"
                                     />
                                     {errors.lastName && <p className="text-[10px] text-white mt-1">{errors.lastName.message}</p>}
@@ -109,26 +109,26 @@ export function InquiryForm() {
 
                             {/* City / Phone Row */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="border-b border-brand-cream/40 pb-2">
-                                    <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
+                                <div className="border-b border-brand-cream pb-2">
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-brand-cream mb-1">
                                         Miasto*
                                     </label>
                                     <input
                                         type="text"
                                         {...register("city")}
-                                        className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
+                                        className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/30 placeholder:text-[10px]"
                                         placeholder="Miasto"
                                     />
                                     {errors.city && <p className="text-[10px] text-white mt-1">{errors.city.message}</p>}
                                 </div>
-                                <div className="border-b border-brand-cream/40 pb-2">
-                                    <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
+                                <div className="border-b border-brand-cream pb-2">
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-brand-cream mb-1">
                                         Numer telefonu*
                                     </label>
                                     <input
                                         type="tel"
                                         {...register("phone")}
-                                        className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40"
+                                        className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/30 placeholder:text-[10px]"
                                         placeholder="Telefon"
                                     />
                                     {errors.phone && <p className="text-[10px] text-white mt-1">{errors.phone.message}</p>}
@@ -136,14 +136,14 @@ export function InquiryForm() {
                             </div>
 
                             {/* Message Field */}
-                            <div className="border-b border-brand-cream/40 pb-2">
-                                <label className="block text-[10px] font-bold uppercase tracking-wider text-brand-cream/60 mb-1">
+                            <div className="border-b border-brand-cream pb-2">
+                                <label className="block text-xs font-bold uppercase tracking-wider text-brand-cream mb-1">
                                     Wiadomość
                                 </label>
                                 <textarea
                                     rows={4}
                                     {...register("message")}
-                                    className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/40 resize-none"
+                                    className="w-full bg-transparent border-none p-2 focus:ring-0 text-brand-cream font-bold placeholder:text-brand-cream/30 placeholder:text-[10px] resize-none"
                                     placeholder="Wiadomość"
                                 />
                                 {errors.message && <p className="text-[10px] text-white mt-1">{errors.message.message}</p>}

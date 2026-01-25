@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero";
+import { HeroV2 } from "@/components/hero-v2";
 import { About } from "@/components/about";
 import { Process } from "@/components/process";
 import { Mixologist } from "@/components/mixologist";
@@ -15,7 +16,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <HeroV2 />
+      {/* <Hero /> - Ukryta wersja */}
       <About />
       <Process />
       <Mixologist />

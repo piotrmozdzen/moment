@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Montserrat, Caveat, Knewave } from 'next/font/google'
+import { Montserrat, Caveat, Knewave, Instrument_Serif, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { siteConfig } from '@/lib/site-config'
@@ -19,6 +19,16 @@ const knewave = Knewave({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-knewave'
+})
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-instrument',
+  style: ['normal', 'italic']
+})
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair'
 })
 
 export const metadata: Metadata = {
@@ -105,7 +115,7 @@ export default function RootLayout({
           "priceRange": "$$"
         })}
       </Script>
-      <body className={cn("min-h-screen bg-background font-sans antialiased", montserrat.variable, caveat.variable, knewave.variable)}>
+      <body className={cn("min-h-screen bg-background font-sans antialiased", montserrat.variable, caveat.variable, knewave.variable, instrumentSerif.variable, playfair.variable)}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-PSL6DF8G"
