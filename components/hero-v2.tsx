@@ -52,7 +52,7 @@ function PolaroidV2({
 
 export function HeroV2() {
     return (
-        <section className="lg:min-h-screen w-full bg-[#FFFFF3] pt-24 pb-12 lg:pt-12 lg:pb-20 px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row gap-12 lg:gap-24 overflow-hidden">
+        <section className="lg:min-h-screen w-full bg-[#FFFFF3] pt-8 pb-12 lg:pt-12 lg:pb-20 px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row gap-12 lg:gap-24 overflow-hidden">
             {/* Left Column: Visual Composition */}
             <div className="hidden lg:flex w-full lg:w-[55%] relative flex-col items-center justify-center">
                 {/* Calligraphy Text Layer */}
@@ -92,7 +92,7 @@ export function HeroV2() {
             </div>
 
             {/* Right Column: Editorial Content */}
-            <div className="w-full lg:w-[45%] flex flex-col gap-12 pt-8 lg:pt-44">
+            <div className="w-full lg:w-[45%] flex flex-col gap-12 pt-0 lg:pt-44">
                 {/* Block 1 */}
                 <div className="flex flex-col gap-8">
                     <div className="flex flex-col gap-6">
@@ -109,11 +109,13 @@ export function HeroV2() {
                         </div>
                     </div>
 
-                    <Link href="/oferta">
-                        <button className="bg-[#2D241E] text-white py-4 px-12 rounded-full w-fit font-montserrat font-bold text-xs tracking-[0.2em] hover:bg-black transition-colors uppercase">
-                            Sprawdź Ofertę
-                        </button>
-                    </Link>
+                    <div className="flex justify-center lg:justify-start">
+                        <Link href="/oferta">
+                            <button className="bg-[#2D241E] text-white py-4 px-12 rounded-full w-fit font-montserrat font-bold text-xs tracking-[0.2em] hover:bg-black transition-colors uppercase">
+                                Sprawdź Ofertę
+                            </button>
+                        </Link>
+                    </div>
 
                 </div>
             </div>
