@@ -11,7 +11,10 @@
   --font-sans: 'Montserrat', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-caveat: 'Caveat', cursive;
+  --font-square-peg: var(--font-square-peg);
   --font-knewave: var(--font-knewave);
+  --font-instrument: var(--font-instrument);
+  --font-playfair: var(--font-playfair);
 
   --radius: 0.5rem;
 }
