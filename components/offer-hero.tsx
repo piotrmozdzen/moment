@@ -57,7 +57,7 @@ export function OfferHero() {
                         fill
                         className="object-cover"
                         priority
-                        quality={90}
+                        quality={85}
                         sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     <div className="absolute inset-0 bg-black/5"></div>

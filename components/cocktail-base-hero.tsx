@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 
 export function CocktailBaseHero() {
@@ -34,7 +35,14 @@ export function CocktailBaseHero() {
                             {cocktails.filter((_, i) => i % 2 === 0).map((item, i) => (
                                 <div key={i} className="flex flex-col items-center w-full">
                                     <div className="relative w-full aspect-video mb-10 overflow-hidden">
-                                        <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                                        <Image
+                                            src={item.image}
+                                            alt={item.name}
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            quality={85}
+                                        />
                                     </div>
                                     <h3 className="font-square-peg text-2xl md:text-4xl text-[#c16c4d] text-center">
                                         {item.name}
@@ -48,7 +56,14 @@ export function CocktailBaseHero() {
                             {cocktails.filter((_, i) => i % 2 !== 0).map((item, i) => (
                                 <div key={i} className="flex flex-col items-center w-full">
                                     <div className="relative w-full aspect-video mb-10 overflow-hidden">
-                                        <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                                        <Image
+                                            src={item.image}
+                                            alt={item.name}
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            quality={85}
+                                        />
                                     </div>
                                     <h3 className="font-square-peg text-2xl md:text-4xl text-[#c16c4d] text-center">
                                         {item.name}

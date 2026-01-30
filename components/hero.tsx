@@ -27,7 +27,8 @@ function Polaroid({
     rotation,
     zIndex,
     hasTapeTop,
-    hasTapeBottom
+    hasTapeBottom,
+    priority = false
 }: {
     src: string;
     alt: string;
@@ -37,6 +38,7 @@ function Polaroid({
     zIndex?: string;
     hasTapeTop?: boolean;
     hasTapeBottom?: boolean;
+    priority?: boolean;
 }) {
     return (
         <div className={cn(
@@ -60,6 +62,9 @@ function Polaroid({
                     alt={alt}
                     fill
                     className="object-cover"
+                    priority={priority}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={85}
                 />
             </div>
 
@@ -96,7 +101,8 @@ export function Hero() {
             rotation: "rotate-[-2deg]",
             className: "top-[8%] left-[3%] w-44 md:w-56 lg:w-[260px]",
             zIndex: "z-10",
-            hasTapeTop: true
+            hasTapeTop: true,
+            priority: true
         },
         // Top Right - Med (Elevated, Slight Overlap)
         {
@@ -106,7 +112,8 @@ export function Hero() {
             rotation: "rotate-[6deg]",
             className: "top-[5%] right-[2%] w-44 md:w-56 lg:w-[260px]",
             zIndex: "z-30",
-            hasTapeBottom: true
+            hasTapeBottom: true,
+            priority: true
         },
         // Mid Left - Med (Overlaps Top Left)
         {

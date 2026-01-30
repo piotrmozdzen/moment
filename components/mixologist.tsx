@@ -14,7 +14,7 @@ export function Mixologist() {
                         alt="Filip - główny miksolog Moment Drink Bar Lublin, ekspert od drinków weselnych i eventowych"
                         fill
                         className="object-cover"
-                        quality={90}
+                        quality={85}
                         sizes="(max-width: 768px) 100vw, 50vw"
                     />
                 </div>
